@@ -1,3 +1,3 @@
-# Handout DGNB Seminar - Klimaneutraler Gebäudebestand mit 3D-Stadtmodellen
+# Documentation SensorThingsAPI for SAVeNoW
 
-[:rocket: View on ReadTheDocs.io :rocket:](https://3d-city-model-handout-dgnb.readthedocs.io/de/latest/)
+Visit this page for more: https://sta.savenow.de/
