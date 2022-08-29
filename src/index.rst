@@ -7,6 +7,10 @@
 
 
 
+.
+
+
+
 .. index:: ! Home, SAVeNoW, ! Content
 
 ###############################################################################
@@ -20,6 +24,7 @@ SAVeNoW - SensorThingsAPI
   :width: 100 px
   :align: center
   :target: https://www.savenow.de
+
 
 .. table:: Preview of the detector loop map and a Grafana Dashboard for an intersection.
   :align: center
