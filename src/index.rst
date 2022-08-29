@@ -21,6 +21,13 @@ SAVeNoW - SensorThingsAPI
   :align: center
   :target: https://www.savenow.de
 
+.. table:: Preview of the detector loop map and a Grafana Dashboard for an intersection.
+  :align: center
+
+  +---------+---------+
+  | |fig1|  | |fig2|  |
+  +---------+---------+
+
 *******************************************************************************
 Content
 *******************************************************************************
@@ -34,6 +41,12 @@ Content
 
 * :ref:`genindex`
 
-.. image:: img/overview_map.jpg
+.. Figure replacements --------------------------------------------------------
 
-.. image:: img/dashboard.jpg
+.. |fig1| image:: img/overview_map.jpg
+  :alt: SAVeNoW Detector loop map for Ingolstadt
+  :target: https://sta.savenow.de/map/
+
+.. |fig2| image:: img/dashboard.jpg
+  :alt: Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str.
+  :target: https://sta.savenow.de/grafana/

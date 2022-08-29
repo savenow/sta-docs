@@ -4,25 +4,37 @@
 Services
 ###############################################################################
 
-Die hier gelisteten Services werden in einem Kubernetes Cluster in der
-Microsoft Azure Cloud gehostet. Der verwendete Helm Chart ist hier verfügbar:
-
-    |:white_sun_behind_cloud:| Hier geht's zum Helm Chart: https://github.com/tum-gis/tum-gis-iot-stack-k8s
-    |:white_sun_behind_cloud:|
-
-
-
-
 .. index:: Detector loop map
 
 *******************************************************************************
 Detector loop map
 *******************************************************************************
 
-Alle Zählschleifen in Ingolstadt auf einer `Leaflet <https://leafletjs.com/>`_
-Webmap visualisiert.
+Die *Detector loop map* visualisiert alle Zählschleifen in Ingolstadt, die
+mit der SensorThingsAPI verwaltet werden, auf einer `Leaflet <https://leafletjs.com/>`_
+Webkarte. Eine Vorschau der Karte ist in :numref:`preview_map` und
+:numref:`preview_map_close` zu sehen.
 
     |:map:| Hier geht's zur Karte: https://sta.savenow.de/map |:map:|
+
+.. figure:: img/overview_map.jpg
+  :width: 98 %
+  :alt: SAVeNoW Detector loop map for Ingolstadt
+  :align: center
+  :name: preview_map
+  :target: https://www.savenow.de/map/
+
+  Preview of the SAVeNoW detector loop map.
+
+.. figure:: img/map_close.jpg
+  :width: 98 %
+  :alt: SAVeNoW Detector loop map closeup intersection Hindenburgstr./Ringlerstr.
+  :align: center
+  :name: preview_map_close
+  :target: https://www.savenow.de/map/
+
+  SAVeNoW Detector loop map closeup intersection Hindenburgstr./Ringlerstr.
+
 
 .. index:: FROST-Server
 
@@ -68,7 +80,6 @@ gehalten werden.
 
     |:rocket:| Hier geht's zum FROST-Server: https://sta.savenow.de/frost |:rocket:|
 
-
 .. index:: Grafana
 
 *******************************************************************************
@@ -100,6 +111,15 @@ ohne zu programmieren in wenigen Klicks zusammengestellt werden.
 
     |:rocket:| Hier geht's zu Grafana v7: https://sta.savenow.de/grafana7 |:rocket:|
 
+.. figure:: img/dashboard.jpg
+  :width: 98 %
+  :alt: Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str.
+  :align: center
+  :name: grafana
+  :target: https://sta.savenow.de/grafana/
+
+  Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str.
+
 *******************************************************************************
 Node-RED
 *******************************************************************************
@@ -118,3 +138,25 @@ Im Jahr 2016 hat IBM Node-RED als Open-Source-Software der JS-Foundation übertr
 
 
     |:rocket:| Hier geht's zu Node-RED: https://sta.savenow.de/nodered |:rocket:|
+
+.. index:: Kubernetes, k8s
+
+*******************************************************************************
+Kubernetes
+*******************************************************************************
+
+.. image:: img/icon/k8s.png
+  :width: 120 px
+  :align: right
+  :alt: FROST-Server logo
+
+Kubernetes ist ein von Google entwickeltes Open-Source-System zur Verwaltung von
+Container Anwendungen. In diesem Umfeld wird die Verwaltung der technischen Container
+Infrastruktur auch als Orchestrierung bezeichnet.
+
+Die hier gelisteten Services werden in einem Kubernetes Cluster in der
+Microsoft Azure Cloud gehostet. Der verwendete Helm Chart ist hier verfügbar:
+
+    |:white_sun_behind_cloud:| Hier geht's zum Helm Chart:
+    https://github.com/tum-gis/tum-gis-iot-stack-k8s
+    |:white_sun_behind_cloud:|
