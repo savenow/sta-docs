@@ -51,7 +51,8 @@ extensions = [
     'sphinx_rtd_theme',
     'sphinx_copybutton',
     'sphinxemoji.sphinxemoji',
-    'sphinx.ext.autosectionlabel'
+    'sphinx.ext.autosectionlabel',
+    'sphinx_fontawesome',
 ]
 
 # Autosection labels
