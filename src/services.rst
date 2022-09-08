@@ -1,13 +1,27 @@
 .. index:: Services
 
 ###############################################################################
-Services
+IoT-Dienste
 ###############################################################################
 
-.. index:: Detector loop map
+.. index:: Get access, Zugang erhalten
 
 *******************************************************************************
-Detector loop map
+Zugang zu den Diensten
+*******************************************************************************
+
+Die Zugangsdaten zu den Diensten sind für die Projektpartner hier hinterlegt:
+
+* `Confluence SensorThingsAPI <https://collaboration.msi.audi.com/confluence/
+  display/SAVE/SensorThingsAPI>`_
+
+Wenn Sie sich für die Daten und Dienste interessieren und keinen Zugang haben,
+nehmen Sie gerne :ref:`Kontakt <contact:contact>` zu uns auf.
+
+.. index:: Detector loop map, Leaflet, Zählschleifenkarte
+
+*******************************************************************************
+Zählschleifenkarte
 *******************************************************************************
 
 Die *Detector loop map* visualisiert alle Zählschleifen in Ingolstadt, die
@@ -22,7 +36,6 @@ Webkarte. Eine Vorschau der Karte ist in :numref:`preview_map` und
   :alt: SAVeNoW Detector loop map for Ingolstadt
   :align: center
   :name: preview_map
-  :target: https://www.savenow.de/map/
 
   Preview of the SAVeNoW detector loop map.
 
@@ -31,12 +44,11 @@ Webkarte. Eine Vorschau der Karte ist in :numref:`preview_map` und
   :alt: SAVeNoW Detector loop map closeup intersection Hindenburgstr./Ringlerstr.
   :align: center
   :name: preview_map_close
-  :target: https://www.savenow.de/map/
 
   SAVeNoW Detector loop map closeup intersection Hindenburgstr./Ringlerstr.
 
 
-.. index:: FROST-Server
+.. index:: FROST-Server, SensorThingsAPI, OGC, Open Geospatial Consortium, API
 
 *******************************************************************************
 FROST-Server
@@ -80,7 +92,7 @@ gehalten werden.
 
     |:rocket:| Hier geht's zum FROST-Server: https://sta.savenow.de/frost |:rocket:|
 
-.. index:: Grafana
+.. index:: Grafana, data visualization, dashboard, heatmap, charts
 
 *******************************************************************************
 Grafana
@@ -120,6 +132,8 @@ ohne zu programmieren in wenigen Klicks zusammengestellt werden.
 
   Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str.
 
+.. index:: Node-RED, data integration
+
 *******************************************************************************
 Node-RED
 *******************************************************************************
@@ -139,7 +153,7 @@ Im Jahr 2016 hat IBM Node-RED als Open-Source-Software der JS-Foundation übertr
 
     |:rocket:| Hier geht's zu Node-RED: https://sta.savenow.de/nodered |:rocket:|
 
-.. index:: Kubernetes, k8s
+.. index:: Kubernetes, k8s, Cloud, Azure
 
 *******************************************************************************
 Kubernetes
