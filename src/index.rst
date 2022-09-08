@@ -1,16 +1,3 @@
-**Warning:** This website is under construction!
-
-.. image:: img/under-construction.png
-  :width: 100 px
-  :align: center
-  :target: https://www.savenow.de
-
-
-
-.
-
-
-
 .. index:: ! Home, SAVeNoW, ! Content
 
 ###############################################################################
@@ -21,17 +8,44 @@ SAVeNoW - SensorThingsAPI
   in the cloud.*
 
 .. image:: img/icon/savenow-logo.png
-  :width: 100 px
+  :width: 120 px
   :align: center
   :target: https://www.savenow.de
 
+.. image:: img/icon/favicon_tum.svg
+  :width: 100 px
+  :align: right
+  :target: https://www.asg.ed.tum.de/gis/startseite
 
-.. table:: Preview of the detector loop map and a Grafana Dashboard for an intersection.
+As a contribution to the `SAVeNoW <https://www.savenow.de/>`_ research project,
+the city of Ingolstadt provides vehicle count loop data from the entire city
+area for the period 2019 to the present.
+Data is available in 15-minute time steps for more than 700 counting loops.
+
+.. image:: img/icon/efs-logo.svg
+  :width: 100 px
+  :align: right
+  :target: https://www.efs-auto.com/
+
+For the efficient management and interactive
+visualisation of the data for the project partners, the
+`Chair of Geoinformatics (TUM) <https://www.asg.ed.tum.de/gis/startseite/>`_
+in cooperation with `e:fs <https://www.efs-auto.com/>`_ has put together an
+open source IoT application stack.
+The stack is hosted in a :ref:`services:Kubernetes` cluster based on
+`Microsoft Azure <https://azure.microsoft.com/de-de/>`_ cloud services.
+It consists of several :ref:`services:Services` for providing
+:ref:`standardized API <services:frost-server>` access to the data, an
+:ref:`overview map <services:Detector loop map>` for the location of detectors,
+as well as :ref:`data visualization <services:grafana>` and
+:ref:`data integration <services:node-red>` tools.
+
+.. table:: Preview of the detector loop map and a Dashboard for one intersection.
   :align: center
 
-  +---------+---------+
-  | |fig1|  | |fig2|  |
-  +---------+---------+
+  +--------+--------+
+  | |fig1| | |fig2| |
+  +--------+--------+
 
 *******************************************************************************
 Content
