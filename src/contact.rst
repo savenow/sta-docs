@@ -25,7 +25,7 @@ Contact
 
 .. rubric:: Benedikt Bieberle
 
-:eMail: | benedikt.bieberle(at)efs-auto.de
+:eMail: | benedikt.bieberle(at)efs-techhub.com
 
 :Address: | e:fs TechHub GmbH
           | Dr.-Ludwig-Kraus-Straße 6
