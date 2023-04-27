@@ -16,24 +16,18 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
-import subprocess
-
-committime = subprocess.check_output(["git", "show",  "-s",  "--format=%cd",  "--date=local",  "HEAD"]).strip()
-# commithash = subprocess.check_output(["git",  "log",  "-1", '--format=%h' ]).strip()
-latesttag = subprocess.check_output(["git",  "describe", "--tags"]).strip()
 
 # -- Project information -----------------------------------------------------
 
 project = u'SAVeNoW - SensorThingsAPI'
-copyright = u'2022, Bruno Willenborg'
-author = u'Bruno Willenborg'
+copyright = u'2023, SAVeNoW'
+author = u'SAVeNoW'
 
 # The short X.Y version
-version =  committime.decode("utf-8") + ' ' + latesttag.decode("utf-8")
-#   + '#' +  commithash.decode("utf-8")
+version = '0.0'
 
 # The full version, including alpha/beta/rc tags
-release = latesttag.decode("utf-8")
+release = '0.0.1'
 
 # -- General configuration ---------------------------------------------------
 
