@@ -1,0 +1,25 @@
+name: Build, deploy gh-pages
+
+on:
+  push:
+    branches:
+    - main
+
+  pull_request:
+
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+    -
+      name: Checkout repo
+      uses: actions/checkout@v3
+    -
+      name: Sphinx build - html
+      run: docker run --rm -v $PWD:/docs bwibo/sphinx-rtd make html
+    -
+      name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@4
+      with:
+        branch: gh-pages
+        folder: build/html
