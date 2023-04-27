@@ -1,3 +1,5 @@
 # Documentation SensorThingsAPI for SAVeNoW
 
-Visit this page for more: https://sta.savenow.de/
+The docs in this repo are automatically build and deployed to:
+
+https://savenow.github.io/sta-docs/
