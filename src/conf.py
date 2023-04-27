@@ -76,7 +76,7 @@ copybutton_here_doc_delimiter = "EOT"
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'en'
+language = 'de'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -106,7 +106,7 @@ html_favicon = 'favicon.png'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_baseurl = "https://sta.savenow.de/"
+html_baseurl = "https://sta-rt.savenow.de/"
 
 html_theme_options = {
     #'analytics_id': 'UA-XXXXXXX-1',  #  Provided by Google in your dashboard
