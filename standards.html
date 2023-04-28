@@ -29,7 +29,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
-    <link rel="next" title="IoT-Dienste" href="services.html" />
+    <link rel="next" title="Webdienste" href="services.html" />
     <link rel="prev" title="Data" href="data.html" /> 
 </head>
 
@@ -64,14 +64,22 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Standards</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#ogc-sensorthingsapi">OGC SensorThingsAPI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#datenmodell">Datenmodell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#implementierungen-der-sensorthingsapi">Implementierungen der SensorThingsAPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#referenzen">Referenzen</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="services.html">IoT-Dienste</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="services.html">Webdienste</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="services.html#zugang-zu-den-diensten">Zugang zu den Diensten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="services.html#frost-server">FROST-Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="services.html#funktionen">Funktionen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="services.html#referenzen-zum-frost-server">Referenzen zum FROST-Server</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="services.html#zahlschleifenkarte">Zählschleifenkarte</a></li>
-<li class="toctree-l2"><a class="reference internal" href="services.html#frost-server">FROST-Server</a></li>
-<li class="toctree-l2"><a class="reference internal" href="services.html#grafana">Grafana</a></li>
-<li class="toctree-l2"><a class="reference internal" href="services.html#node-red">Node-RED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="services.html#grafana">Grafana</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="services.html#referenzen-zu-grafana">Referenzen zu Grafana</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="services.html#kubernetes">Kubernetes</a></li>
 </ul>
 </li>
@@ -134,6 +142,29 @@ wiederum beliebig viele z.B. phys. Eigenschaften (<code class="docutils literal 
 Die tatsächlichen Beobachtungen (<code class="docutils literal notranslate"><span class="pre">Observations</span></code>) sind über einen <code class="docutils literal notranslate"><span class="pre">Datastream</span></code> erreichbar,
 der <code class="docutils literal notranslate"><span class="pre">Thing</span></code>, <code class="docutils literal notranslate"><span class="pre">Sensor</span></code> und <code class="docutils literal notranslate"><span class="pre">ObservedProperty</span></code> in Bezug setzt.</p>
 </section>
+<section id="implementierungen-der-sensorthingsapi">
+<span id="index-3"></span><h2>Implementierungen der SensorThingsAPI<a class="headerlink" href="#implementierungen-der-sensorthingsapi" title="Permalink to this heading"></a></h2>
+<p>Es existieren mehrere Implementierungen des SensorThingsAPI Standards. An dieser
+Stelle wird nur die hier verwendete Implementierung aufgeführt.</p>
+<p>➡️ <a class="reference external" href="https://www.iosb.fraunhofer.de/en/projects-and-products/frost-server.html">Fraunhofer IOSB FROST-Server</a></p>
+</section>
+<section id="referenzen">
+<span id="index-4"></span><h2>Referenzen<a class="headerlink" href="#referenzen" title="Permalink to this heading"></a></h2>
+<p>Die SensorThingsAPI ist international etabliert und an vielen Stellen im Einsatz:</p>
+<ul>
+<li><p>IoT-Infrastruktur der Stadt Hamburg</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><a class="reference external" href="https://geodaesie.info/zfv/zfv-archiv/zfv-146-jahrgang/zfv-2021-1/urban-data-platform-hamburg-integration-von-echtzeit-iot-daten-mittels-sensorthings-api">zfv - Urban Data Platform Hamburg: Integration von Echtzeit IoT-Daten mittels SensorThings API</a></p></li>
+<li><p><a class="reference external" href="https://iot.hamburg.de">FROST-Server API Endpunkt Iot-Hamburg</a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>OGC SensorThingsAPI Standard Dokumente: <a class="reference external" href="https://www.ogc.org/standards/sensorthings">https://www.ogc.org/standards/sensorthings</a></p></li>
+<li><p>OGC SensorThingsAPI API Dokumentation: <a class="reference external" href="https://developers.sensorup.com/docs/">https://developers.sensorup.com/docs/</a></p></li>
+<li><p>SensorThingsAPI Beispiele: <a class="reference external" href="https://fraunhoferiosb.github.io/FROST-Server/sensorthingsapi/1_Home.html">https://fraunhoferiosb.github.io/FROST-Server/sensorthingsapi/1_Home.html</a></p></li>
+</ul>
+</section>
 </section>
 
 
@@ -141,7 +172,7 @@ der <code class="docutils literal notranslate"><span class="pre">Thing</span></c
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="data.html" class="btn btn-neutral float-left" title="Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Zurück</a>
-        <a href="services.html" class="btn btn-neutral float-right" title="IoT-Dienste" accesskey="n" rel="next">Weiter <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="services.html" class="btn btn-neutral float-right" title="Webdienste" accesskey="n" rel="next">Weiter <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

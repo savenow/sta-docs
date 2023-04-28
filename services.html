@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IoT-Dienste &mdash; SAVeNoW - SensorThingsAPI 0.0.1 Dokumentation</title>
+  <title>Webdienste &mdash; SAVeNoW - SensorThingsAPI 0.0.1 Dokumentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
@@ -64,14 +64,22 @@
 <li class="toctree-l1"><a class="reference internal" href="standards.html">Standards</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="standards.html#ogc-sensorthingsapi">OGC SensorThingsAPI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="standards.html#datenmodell">Datenmodell</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#implementierungen-der-sensorthingsapi">Implementierungen der SensorThingsAPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#referenzen">Referenzen</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">IoT-Dienste</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Webdienste</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#zugang-zu-den-diensten">Zugang zu den Diensten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#frost-server">FROST-Server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#funktionen">Funktionen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#referenzen-zum-frost-server">Referenzen zum FROST-Server</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#zahlschleifenkarte">Zählschleifenkarte</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#frost-server">FROST-Server</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#grafana">Grafana</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#node-red">Node-RED</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grafana">Grafana</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#referenzen-zu-grafana">Referenzen zu Grafana</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#kubernetes">Kubernetes</a></li>
 </ul>
 </li>
@@ -92,7 +100,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">IoT-Dienste</li>
+      <li class="breadcrumb-item active">Webdienste</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/services.rst.txt" rel="nofollow"> Quelltext anzeigen</a>
       </li>
@@ -102,53 +110,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="iot-dienste">
-<span id="index-0"></span><h1>IoT-Dienste<a class="headerlink" href="#iot-dienste" title="Permalink to this heading"></a></h1>
+  <section id="webdienste">
+<span id="index-0"></span><h1>Webdienste<a class="headerlink" href="#webdienste" title="Permalink to this heading"></a></h1>
 <section id="zugang-zu-den-diensten">
 <span id="index-1"></span><h2>Zugang zu den Diensten<a class="headerlink" href="#zugang-zu-den-diensten" title="Permalink to this heading"></a></h2>
-<p>Die Zugangsdaten zu den Diensten sind für die Projektpartner hier hinterlegt:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://collaboration.msi.audi.com/confluence/display/SAVE/SensorThingsAPI">Confluence SensorThingsAPI</a></p></li>
-</ul>
+<p>Die Webdienste und der SensorThingsAPI API-Zugang sind aktuell noch
+passwortgeschützt. Die Zugangsdaten zu den Diensten sind für die Projektpartner
+hier hinterlegt.</p>
+<p>➡️ <a class="reference external" href="https://collaboration.msi.audi.com/confluence/display/SAVE/SensorThingsAPI">SAVeNoW Confluence - SensorThingsAPI</a></p>
 <p>Wenn Sie sich für die Daten und Dienste interessieren und keinen Zugang haben,
-nehmen Sie gerne <a class="reference internal" href="contact.html#contact"><span class="std std-ref">Kontakt</span></a> zu uns auf.</p>
-</section>
-<section id="zahlschleifenkarte">
-<span id="index-2"></span><h2>Zählschleifenkarte<a class="headerlink" href="#zahlschleifenkarte" title="Permalink to this heading"></a></h2>
-<p>Die <em>Detector loop map</em> visualisiert alle Zählschleifen in Ingolstadt, die
-mit der SensorThingsAPI verwaltet werden, auf einer <a class="reference external" href="https://leafletjs.com/">Leaflet</a>
-Webkarte. Eine Vorschau der Karte ist in <a class="reference internal" href="#preview-map"><span class="std std-numref">Abb. 3</span></a> und
-<a class="reference internal" href="#preview-map-close"><span class="std std-numref">Abb. 4</span></a> zu sehen.</p>
-<blockquote>
-<div><p>🗺️ Hier geht’s zur Karte: <a class="reference external" href="https://sta.savenow.de/map">https://sta.savenow.de/map</a> 🗺️</p>
-</div></blockquote>
-<figure class="align-center" id="preview-map">
-<a class="reference internal image-reference" href="_images/overview_map.jpg"><img alt="SAVeNoW Detector loop map for Ingolstadt" src="_images/overview_map.jpg" style="width: 98%;" /></a>
-<figcaption>
-<p><span class="caption-number">Abb. 3 </span><span class="caption-text">Preview of the SAVeNoW detector loop map.</span><a class="headerlink" href="#preview-map" title="Link zu diesem Bild"></a></p>
-</figcaption>
-</figure>
-<figure class="align-center" id="preview-map-close">
-<a class="reference internal image-reference" href="_images/map_close.jpg"><img alt="SAVeNoW Detector loop map closeup intersection Hindenburgstr./Ringlerstr." src="_images/map_close.jpg" style="width: 98%;" /></a>
-<figcaption>
-<p><span class="caption-number">Abb. 4 </span><span class="caption-text">SAVeNoW Detector loop map closeup intersection Hindenburgstr./Ringlerstr.</span><a class="headerlink" href="#preview-map-close" title="Link zu diesem Bild"></a></p>
-</figcaption>
-</figure>
+nehmen Sie gerne <a class="reference internal" href="contact.html#contact"><span class="std std-ref">Kontakt</span></a> mit uns auf.</p>
 </section>
 <section id="frost-server">
-<span id="index-3"></span><h2>FROST-Server<a class="headerlink" href="#frost-server" title="Permalink to this heading"></a></h2>
+<span id="index-2"></span><h2>FROST-Server<a class="headerlink" href="#frost-server" title="Permalink to this heading"></a></h2>
+<p>Der FROST-Server stellt die SensorThingsAPI als Webanwendung bereit.
+Alle hier beschriebenen Datendienste greifen auf die API um die Zählschleifendaten
+abzurufen.</p>
+<p>🚀 Hier geht’s zum FROST-Server: <a class="reference external" href="https://sta-rt.savenow.de/frost">https://sta-rt.savenow.de/frost</a> 🚀</p>
 <a class="reference internal image-reference" href="_images/frost-server-icon.png"><img alt="FROST-Server logo" class="align-right" src="_images/frost-server-icon.png" style="width: 120px;" /></a>
-<p>Der FROST-Server ist eine Open Source Server-Implementierung der OGC SensorThings API.
-Er ist in Java geschrieben und kann in Tomcat oder Wildfly laufen und ist als
-Docker-Image verfügbar. Zu seinen vielen Funktionen gehört die Möglichkeit,
-String- oder UUID-basierte Entity-IDs zu verwenden. FROST-Server ist ein Akronym
-und steht für <em>Fraunhofer Open Source SensorThingsAPI Server</em>.
+<p>Der FROST-Server ist eine Open Source Server-Implementierung der
+<a class="reference internal" href="standards.html#ogc-sensorthingsapi"><span class="std std-ref">OGC SensorThingsAPI</span></a>. Er ist in Java geschrieben und kann in
+Tomcat oder Wildfly laufen und ist als Docker-Image verfügbar.
+Zu seinen vielen Funktionen gehört die Möglichkeit, String- oder UUID-basierte
+Entity-IDs zu verwenden. FROST-Server ist ein Akronym und steht für
+<em>Fraunhofer Open Source SensorThingsAPI Server</em>.
 Der Name soll aber auch suggerieren, dass Ihre Daten <em>frisch und verfügbar</em>
 gehalten werden.</p>
-<p class="rubric">Funktionen</p>
+<section id="funktionen">
+<span id="index-3"></span><h3>Funktionen<a class="headerlink" href="#funktionen" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p>Basiert auf SensorThings API, einem Standard des OGC (OGC ist eines der wichtigsten
-internationalen Standardisierungsgremien für Daten mit Raumbezug)</p></li>
+<li><p>Basiert auf SensorThings API, einem Standard des OGC</p></li>
 <li><p>Hohe Leistungsfähigkeit</p></li>
 <li><p>Geringer Ressourcenverbrauch</p></li>
 <li><p>Open Source: Volle Transparenz bei der Software</p>
@@ -159,66 +150,78 @@ ermöglicht strategische Entscheidungen</p></li>
 </ul>
 </li>
 </ul>
-<p class="rubric">Links</p>
-<ul>
-<li><p>Official website: <a class="reference external" href="https://www.iosb.fraunhofer.de/de/projekte-produkte/frostserver.html">https://www.iosb.fraunhofer.de/de/projekte-produkte/frostserver.html</a></p></li>
+</section>
+<section id="referenzen-zum-frost-server">
+<span id="index-4"></span><h3>Referenzen zum FROST-Server<a class="headerlink" href="#referenzen-zum-frost-server" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Offizielle Website: <a class="reference external" href="https://www.iosb.fraunhofer.de/de/projekte-produkte/frostserver.html">https://www.iosb.fraunhofer.de/de/projekte-produkte/frostserver.html</a></p></li>
 <li><p>Github: <a class="reference external" href="https://github.com/FraunhoferIOSB/FROST-Server">https://github.com/FraunhoferIOSB/FROST-Server</a></p></li>
-<li><p>Documentation: <a class="reference external" href="https://fraunhoferiosb.github.io/FROST-Server/">https://fraunhoferiosb.github.io/FROST-Server/</a></p></li>
-<li><p>OGC SensorWebEnablement Overview: <a class="reference external" href="https://www.ogc.org/node/698">https://www.ogc.org/node/698</a></p></li>
-<li><p>OGC SensorThingsAPI Standard docs: <a class="reference external" href="https://www.ogc.org/standards/sensorthings">https://www.ogc.org/standards/sensorthings</a></p></li>
-<li><p>OGC SensorThingsAPI API Documentation: <a class="reference external" href="https://developers.sensorup.com/docs/">https://developers.sensorup.com/docs/</a></p></li>
-<li><p>SensorThingsAPI Beispiele: <a class="reference external" href="https://fraunhoferiosb.github.io/FROST-Server/sensorthingsapi/1_Home.html">https://fraunhoferiosb.github.io/FROST-Server/sensorthingsapi/1_Home.html</a></p>
-<blockquote>
-<div><p>🚀 Hier geht’s zum FROST-Server: <a class="reference external" href="https://sta.savenow.de/frost">https://sta.savenow.de/frost</a> 🚀</p>
-</div></blockquote>
-</li>
+<li><p>Dokumentation: <a class="reference external" href="https://fraunhoferiosb.github.io/FROST-Server/">https://fraunhoferiosb.github.io/FROST-Server/</a></p></li>
 </ul>
 </section>
-<section id="grafana">
-<span id="index-4"></span><h2>Grafana<a class="headerlink" href="#grafana" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/grafana-icon.jpg"><img alt="Grafana logo" class="align-right" src="_images/grafana-icon.jpg" style="width: 70px;" /></a>
-<p>Grafana ist eine plattformübergreifende Open-Source-Anwendung zur grafischen
-Darstellung von Daten aus verschiedenen Datenquellen wie z. B. InfluxDB, MySQL,
-PostgreSQL, Prometheus und Graphite.
-Die erfassten Rohdaten lassen sich anschließend in verschiedenen Anzeigeformen ausgeben.
-Diese können dann zu sogenannten Dashboards zusammengefügt werden.
-Die Anzeigemöglichkeiten und Datenquellen können zudem mittels Plug-ins erweitert werden.
-Auf diese Weise wird auch der FROST-Server direkt unterstützt und es können Dashboards
-ohne zu programmieren in wenigen Klicks zusammengestellt werden.</p>
-<p class="rubric">Links</p>
-<ul>
-<li><p>Official website: <a class="reference external" href="https://grafana.com/">https://grafana.com/</a></p></li>
-<li><p>Github: <a class="reference external" href="https://github.com/grafana/grafana">https://github.com/grafana/grafana</a></p></li>
-<li><p>LinkSmart OGC SensorThingsAPI Plugin: <a class="reference external" href="https://github.com/linksmart/grafana-sensorthings-datasource">https://github.com/linksmart/grafana-sensorthings-datasource</a></p></li>
-<li><p>Fraunhofer IOSB SensorThingsAPI Plugin:</p>
+</section>
+<section id="zahlschleifenkarte">
+<span id="index-5"></span><h2>Zählschleifenkarte<a class="headerlink" href="#zahlschleifenkarte" title="Permalink to this heading"></a></h2>
+<p>Die Zählschleifenkarte visualisiert alle Zählschleifen in Ingolstadt, die
+mit der SensorThingsAPI verwaltet werden, auf einer <a class="reference external" href="https://leafletjs.com/">Leaflet</a>
+Webkarte. Eine Vorschau der Karte ist in <a class="reference internal" href="#preview-map"><span class="std std-numref">Abb. 3</span></a> und
+<a class="reference internal" href="#preview-map-close"><span class="std std-numref">Abb. 4</span></a> zu sehen.</p>
 <blockquote>
-<div><p>🚀 Hier geht’s zu Grafana: <a class="reference external" href="https://sta.savenow.de/grafana">https://sta.savenow.de/grafana</a> 🚀</p>
-<p>🚀 Hier geht’s zu Grafana v7: <a class="reference external" href="https://sta.savenow.de/grafana7">https://sta.savenow.de/grafana7</a> 🚀</p>
+<div><p>🗺️ Hier geht’s zur Karte: <a class="reference external" href="https://sta.savenow.de/map">https://sta.savenow.de/map</a> 🗺️</p>
 </div></blockquote>
-</li>
-</ul>
-<figure class="align-center" id="id1">
-<a class="reference external image-reference" href="https://sta.savenow.de/grafana/"><img alt="Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str." src="_images/dashboard.jpg" style="width: 98%;" /></a>
+<figure class="align-center" id="preview-map">
+<a class="reference internal image-reference" href="_images/overview_map.jpg"><img alt="SAVeNoW Zählschleifenkarte für Ingolstadt" src="_images/overview_map.jpg" style="width: 98%;" /></a>
 <figcaption>
-<p><span class="caption-number">Abb. 5 </span><span class="caption-text">Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str.</span><a class="headerlink" href="#id1" title="Link zu diesem Bild"></a></p>
+<p><span class="caption-number">Abb. 3 </span><span class="caption-text">Vorschau der Zählschleifenkarte von Ingolstadt.</span><a class="headerlink" href="#preview-map" title="Link zu diesem Bild"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="preview-map-close">
+<a class="reference internal image-reference" href="_images/sta-map-graph.jpg"><img alt="SAVeNoW Zählschleifenkarte Kreuzung Hindenburgstr./Ringlerstr." src="_images/sta-map-graph.jpg" style="width: 98%;" /></a>
+<figcaption>
+<p><span class="caption-number">Abb. 4 </span><span class="caption-text">Detailansicht der SAVeNoW Zählschleifenkarte für die
+Kreuzung Hindenburgstraße/Ringlerstraße. Die Livedaten der Verkehrszählungen
+werden bei Klick in einem Popup als Zeitreihe visualisiert.</span><a class="headerlink" href="#preview-map-close" title="Link zu diesem Bild"></a></p>
 </figcaption>
 </figure>
 </section>
-<section id="node-red">
-<span id="index-5"></span><h2>Node-RED<a class="headerlink" href="#node-red" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/nodered-icon.png"><img alt="Node-RED icon" class="align-right" src="_images/nodered-icon.png" style="width: 70px;" /></a>
-<p>Node-RED ist ein von IBM entwickeltes grafisches Entwicklungswerkzeug.
-Die Software ermöglicht es, Anwendungsfälle im Bereich des Internets der Dinge
-mit einem einfachen Baukastenprinzip umzusetzen. Die einzelnen Funktionsbausteine
-werden durch Ziehen von Verbindungen verbunden. Eine große Auswahl an mitgelieferten
-Bausteinen deckt die meisten der gängigsten Dienste und Technologien ab.
-Im Jahr 2016 hat IBM Node-RED als Open-Source-Software der JS-Foundation übertragen.</p>
+<section id="grafana">
+<span id="index-6"></span><h2>Grafana<a class="headerlink" href="#grafana" title="Permalink to this heading"></a></h2>
 <blockquote>
-<div><p>🚀 Hier geht’s zu Node-RED: <a class="reference external" href="https://sta.savenow.de/nodered">https://sta.savenow.de/nodered</a> 🚀</p>
+<div><p>🚀 Hier geht’s zu Grafana: <a class="reference external" href="https://sta-rt.savenow.de/grafana">https://sta-rt.savenow.de/grafana</a> 🚀</p>
 </div></blockquote>
+<a class="reference internal image-reference" href="_images/grafana-icon.jpg"><img alt="Grafana logo" class="align-right" src="_images/grafana-icon.jpg" style="width: 70px;" /></a>
+<p>Grafana ist eine plattformübergreifende Open-Source-Anwendung zur grafischen
+Darstellung von Daten aus verschiedenen Datenquellen wie z. B. InfluxDB, MySQL,
+PostgreSQL, oder der <a class="reference internal" href="standards.html#ogc-sensorthingsapi"><span class="std std-ref">OGC SensorThingsAPI</span></a>.
+Die erfassten Rohdaten lassen sich anschließend in verschiedenen Anzeigeformen ausgeben.
+Diese können dann zu sogenannten Dashboards zusammengefügt werden.
+Die Anzeigemöglichkeiten und Datenquellen können zudem mittels Plugins erweitert werden.
+Auf diese Weise wird auch der FROST-Server direkt unterstützt und es können
+ohne Programmierkenntnisse Dashboards in wenigen Klicks zusammengestellt werden.</p>
+<figure class="align-center" id="id1">
+<a class="reference external image-reference" href="https://sta.savenow.de/grafana/"><img alt="Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str." src="_images/dashboard-hm.jpg.png" style="width: 98%;" /></a>
+<figcaption>
+<p><span class="caption-number">Abb. 5 </span><span class="caption-text">Vorschau Dashboard zur Verkehrsstärke in Ingolstadt.</span><a class="headerlink" href="#id1" title="Link zu diesem Bild"></a></p>
+</figcaption>
+</figure>
+<figure class="align-center" id="id2">
+<a class="reference external image-reference" href="https://sta.savenow.de/grafana/"><img alt="_images/dashboard.jpg" src="_images/dashboard.jpg" style="width: 98%;" /></a>
+<figcaption>
+<p><span class="caption-number">Abb. 6 </span><span class="caption-text">Vorschau Dashboard zur Verkehrsstärke an der Kreuzung Nürnbergerstr./Theodor-Heuss-Straße.</span><a class="headerlink" href="#id2" title="Link zu diesem Bild"></a></p>
+</figcaption>
+</figure>
+<section id="referenzen-zu-grafana">
+<span id="index-7"></span><h3>Referenzen zu Grafana<a class="headerlink" href="#referenzen-zu-grafana" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Official website: <a class="reference external" href="https://grafana.com/">https://grafana.com/</a></p></li>
+<li><p>Github: <a class="reference external" href="https://github.com/grafana/grafana">https://github.com/grafana/grafana</a></p></li>
+<li><p>LinkSmart OGC SensorThingsAPI Plugin: <a class="reference external" href="https://github.com/linksmart/grafana-sensorthings-datasource">https://github.com/linksmart/grafana-sensorthings-datasource</a></p></li>
+<li><p>Fraunhofer IOSB SensorThingsAPI Plugin:</p></li>
+</ul>
+</section>
 </section>
 <section id="kubernetes">
-<span id="index-6"></span><h2>Kubernetes<a class="headerlink" href="#kubernetes" title="Permalink to this heading"></a></h2>
+<span id="index-8"></span><h2>Kubernetes<a class="headerlink" href="#kubernetes" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="_images/k8s.png"><img alt="FROST-Server logo" class="align-right" src="_images/k8s.png" style="width: 120px;" /></a>
 <p>Kubernetes ist ein von Google entwickeltes Open-Source-System zur Verwaltung von
 Container Anwendungen. In diesem Umfeld wird die Verwaltung der technischen Container
@@ -226,9 +229,9 @@ Infrastruktur auch als Orchestrierung bezeichnet.</p>
 <p>Die hier gelisteten Services werden in einem Kubernetes Cluster in der
 Microsoft Azure Cloud gehostet. Der verwendete Helm Chart ist hier verfügbar:</p>
 <blockquote>
-<div><p>🌥️ Hier geht’s zum Helm Chart:
+<div><p>🚀 Hier geht’s zum Helm Chart:
 <a class="reference external" href="https://github.com/tum-gis/tum-gis-iot-stack-k8s">https://github.com/tum-gis/tum-gis-iot-stack-k8s</a>
-🌥️</p>
+🚀</p>
 </div></blockquote>
 </section>
 </section>

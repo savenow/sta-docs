@@ -1,76 +1,56 @@
-.. index:: Services
+.. index:: ! Dienste, ! Webdienst,! IoT-Dienste
 
 ###############################################################################
-IoT-Dienste
+Webdienste
 ###############################################################################
 
-.. index:: Get access, Zugang erhalten
+.. index:: Zugang erhalten, Zugang Webdienste
 
 *******************************************************************************
 Zugang zu den Diensten
 *******************************************************************************
 
-Die Zugangsdaten zu den Diensten sind für die Projektpartner hier hinterlegt:
+Die Webdienste und der SensorThingsAPI API-Zugang sind aktuell noch
+passwortgeschützt. Die Zugangsdaten zu den Diensten sind für die Projektpartner
+hier hinterlegt.
 
-* `Confluence SensorThingsAPI <https://collaboration.msi.audi.com/confluence/
-  display/SAVE/SensorThingsAPI>`_
+|:arrow_right:| `SAVeNoW Confluence - SensorThingsAPI <https://collaboration.msi.audi.com/confluence/display/SAVE/SensorThingsAPI>`_
 
 Wenn Sie sich für die Daten und Dienste interessieren und keinen Zugang haben,
-nehmen Sie gerne :ref:`Kontakt <contact:contact>` zu uns auf.
+nehmen Sie gerne :ref:`Kontakt <contact:contact>` mit uns auf.
 
-.. index:: Detector loop map, Leaflet, Zählschleifenkarte
-
-*******************************************************************************
-Zählschleifenkarte
-*******************************************************************************
-
-Die *Detector loop map* visualisiert alle Zählschleifen in Ingolstadt, die
-mit der SensorThingsAPI verwaltet werden, auf einer `Leaflet <https://leafletjs.com/>`_
-Webkarte. Eine Vorschau der Karte ist in :numref:`preview_map` und
-:numref:`preview_map_close` zu sehen.
-
-    |:map:| Hier geht's zur Karte: https://sta.savenow.de/map |:map:|
-
-.. figure:: img/overview_map.jpg
-  :width: 98 %
-  :alt: SAVeNoW Detector loop map for Ingolstadt
-  :align: center
-  :name: preview_map
-
-  Preview of the SAVeNoW detector loop map.
-
-.. figure:: img/map_close.jpg
-  :width: 98 %
-  :alt: SAVeNoW Detector loop map closeup intersection Hindenburgstr./Ringlerstr.
-  :align: center
-  :name: preview_map_close
-
-  SAVeNoW Detector loop map closeup intersection Hindenburgstr./Ringlerstr.
-
-
-.. index:: FROST-Server, SensorThingsAPI, OGC, Open Geospatial Consortium, API
+.. index:: ! FROST-Server, SensorThingsAPI, API
 
 *******************************************************************************
 FROST-Server
 *******************************************************************************
+
+Der FROST-Server stellt die SensorThingsAPI als Webanwendung bereit.
+Alle hier beschriebenen Datendienste greifen auf die API um die Zählschleifendaten
+abzurufen.
+
+|:rocket:| Hier geht's zum FROST-Server: https://sta-rt.savenow.de/frost |:rocket:|
 
 .. image:: img/icon/frost-server-icon.png
   :width: 120 px
   :align: right
   :alt: FROST-Server logo
 
-Der FROST-Server ist eine Open Source Server-Implementierung der OGC SensorThings API.
-Er ist in Java geschrieben und kann in Tomcat oder Wildfly laufen und ist als
-Docker-Image verfügbar. Zu seinen vielen Funktionen gehört die Möglichkeit,
-String- oder UUID-basierte Entity-IDs zu verwenden. FROST-Server ist ein Akronym
-und steht für *Fraunhofer Open Source SensorThingsAPI Server*.
+Der FROST-Server ist eine Open Source Server-Implementierung der
+:ref:`standards:ogc sensorthingsapi`. Er ist in Java geschrieben und kann in
+Tomcat oder Wildfly laufen und ist als Docker-Image verfügbar.
+Zu seinen vielen Funktionen gehört die Möglichkeit, String- oder UUID-basierte
+Entity-IDs zu verwenden. FROST-Server ist ein Akronym und steht für
+*Fraunhofer Open Source SensorThingsAPI Server*.
 Der Name soll aber auch suggerieren, dass Ihre Daten *frisch und verfügbar*
 gehalten werden.
 
-.. rubric:: Funktionen
+.. index:: FROST-Server; Funktionen
 
-* Basiert auf SensorThings API, einem Standard des OGC (OGC ist eines der wichtigsten
-  internationalen Standardisierungsgremien für Daten mit Raumbezug)
+Funktionen
+===============================================================================
+
+* Basiert auf SensorThings API, einem Standard des OGC
 * Hohe Leistungsfähigkeit
 * Geringer Ressourcenverbrauch
 * Open Source: Volle Transparenz bei der Software
@@ -79,24 +59,54 @@ gehalten werden.
   * Offene Verfügbarkeit der Software garantiert langfristige Verfügbarkeit und
     ermöglicht strategische Entscheidungen
 
-.. rubric:: Links
 
-* Official website: https://www.iosb.fraunhofer.de/de/projekte-produkte/frostserver.html
+.. index:: FROST-Server; Referenzen
+
+Referenzen zum FROST-Server
+===============================================================================
+
+* Offizielle Website: https://www.iosb.fraunhofer.de/de/projekte-produkte/frostserver.html
 * Github: https://github.com/FraunhoferIOSB/FROST-Server
-* Documentation: https://fraunhoferiosb.github.io/FROST-Server/
-* OGC SensorWebEnablement Overview: https://www.ogc.org/node/698
-* OGC SensorThingsAPI Standard docs: https://www.ogc.org/standards/sensorthings
-* OGC SensorThingsAPI API Documentation: https://developers.sensorup.com/docs/
-* SensorThingsAPI Beispiele: https://fraunhoferiosb.github.io/FROST-Server/sensorthingsapi/1_Home.html
+* Dokumentation: https://fraunhoferiosb.github.io/FROST-Server/
 
+.. index:: Zählschleifenkarte, Karte
 
-    |:rocket:| Hier geht's zum FROST-Server: https://sta.savenow.de/frost |:rocket:|
+*******************************************************************************
+Zählschleifenkarte
+*******************************************************************************
 
-.. index:: Grafana, data visualization, dashboard, heatmap, charts
+Die Zählschleifenkarte visualisiert alle Zählschleifen in Ingolstadt, die
+mit der SensorThingsAPI verwaltet werden, auf einer `Leaflet <https://leafletjs.com/>`_
+Webkarte. Eine Vorschau der Karte ist in :numref:`preview_map` und
+:numref:`preview_map_close` zu sehen.
+
+    |:map:| Hier geht's zur Karte: https://sta.savenow.de/map |:map:|
+
+.. figure:: img/overview_map.jpg
+  :width: 98 %
+  :alt: SAVeNoW Zählschleifenkarte für Ingolstadt
+  :align: center
+  :name: preview_map
+
+  Vorschau der Zählschleifenkarte von Ingolstadt.
+
+.. figure:: img/sta-map-graph.jpg
+  :width: 98 %
+  :alt: SAVeNoW Zählschleifenkarte Kreuzung Hindenburgstr./Ringlerstr.
+  :align: center
+  :name: preview_map_close
+
+  Detailansicht der SAVeNoW Zählschleifenkarte für die
+  Kreuzung Hindenburgstraße/Ringlerstraße. Die Livedaten der Verkehrszählungen
+  werden bei Klick in einem Popup als Zeitreihe visualisiert.
+
+.. index:: Grafana, Dashboard
 
 *******************************************************************************
 Grafana
 *******************************************************************************
+
+    |:rocket:| Hier geht's zu Grafana: https://sta-rt.savenow.de/grafana |:rocket:|
 
 .. image:: img/icon/grafana-icon.jpg
   :width: 70 px
@@ -105,53 +115,39 @@ Grafana
 
 Grafana ist eine plattformübergreifende Open-Source-Anwendung zur grafischen
 Darstellung von Daten aus verschiedenen Datenquellen wie z. B. InfluxDB, MySQL,
-PostgreSQL, Prometheus und Graphite.
+PostgreSQL, oder der :ref:`standards:ogc sensorthingsapi`.
 Die erfassten Rohdaten lassen sich anschließend in verschiedenen Anzeigeformen ausgeben.
 Diese können dann zu sogenannten Dashboards zusammengefügt werden.
-Die Anzeigemöglichkeiten und Datenquellen können zudem mittels Plug-ins erweitert werden.
-Auf diese Weise wird auch der FROST-Server direkt unterstützt und es können Dashboards
-ohne zu programmieren in wenigen Klicks zusammengestellt werden.
+Die Anzeigemöglichkeiten und Datenquellen können zudem mittels Plugins erweitert werden.
+Auf diese Weise wird auch der FROST-Server direkt unterstützt und es können
+ohne Programmierkenntnisse Dashboards in wenigen Klicks zusammengestellt werden.
 
-.. rubric:: Links
-
-* Official website: https://grafana.com/
-* Github: https://github.com/grafana/grafana
-* LinkSmart OGC SensorThingsAPI Plugin: https://github.com/linksmart/grafana-sensorthings-datasource
-* Fraunhofer IOSB SensorThingsAPI Plugin:
-
-    |:rocket:| Hier geht's zu Grafana: https://sta.savenow.de/grafana |:rocket:|
-
-    |:rocket:| Hier geht's zu Grafana v7: https://sta.savenow.de/grafana7 |:rocket:|
-
-.. figure:: img/dashboard.jpg
+.. figure:: img/dashboard-hm.jpg.png
   :width: 98 %
   :alt: Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str.
   :align: center
   :name: grafana
   :target: https://sta.savenow.de/grafana/
 
-  Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str.
+  Vorschau Dashboard zur Verkehrsstärke in Ingolstadt.
 
-.. index:: Node-RED, data integration
+.. figure:: img/dashboard.jpg
+  :width: 98 %
+  :align: center
+  :name: grafana
+  :target: https://sta.savenow.de/grafana/
 
-*******************************************************************************
-Node-RED
-*******************************************************************************
+  Vorschau Dashboard zur Verkehrsstärke an der Kreuzung Nürnbergerstr./Theodor-Heuss-Straße.
 
-.. image:: img/icon/nodered-icon.png
-  :width: 70 px
-  :align: right
-  :alt: Node-RED icon
+.. index:: Grafana; Referenzen
 
-Node-RED ist ein von IBM entwickeltes grafisches Entwicklungswerkzeug.
-Die Software ermöglicht es, Anwendungsfälle im Bereich des Internets der Dinge
-mit einem einfachen Baukastenprinzip umzusetzen. Die einzelnen Funktionsbausteine
-werden durch Ziehen von Verbindungen verbunden. Eine große Auswahl an mitgelieferten
-Bausteinen deckt die meisten der gängigsten Dienste und Technologien ab.
-Im Jahr 2016 hat IBM Node-RED als Open-Source-Software der JS-Foundation übertragen.
+Referenzen zu Grafana
+===============================================================================
 
-
-    |:rocket:| Hier geht's zu Node-RED: https://sta.savenow.de/nodered |:rocket:|
+* Official website: https://grafana.com/
+* Github: https://github.com/grafana/grafana
+* LinkSmart OGC SensorThingsAPI Plugin: https://github.com/linksmart/grafana-sensorthings-datasource
+* Fraunhofer IOSB SensorThingsAPI Plugin:
 
 .. index:: Kubernetes, k8s, Cloud, Azure
 
@@ -171,6 +167,6 @@ Infrastruktur auch als Orchestrierung bezeichnet.
 Die hier gelisteten Services werden in einem Kubernetes Cluster in der
 Microsoft Azure Cloud gehostet. Der verwendete Helm Chart ist hier verfügbar:
 
-    |:white_sun_behind_cloud:| Hier geht's zum Helm Chart:
+    |:rocket:| Hier geht's zum Helm Chart:
     https://github.com/tum-gis/tum-gis-iot-stack-k8s
-    |:white_sun_behind_cloud:|
+    |:rocket:|
