@@ -1,4 +1,4 @@
-.. index:: ! Home, ! SAVeNoW
+.. index:: !Startseite, ! SAVeNoW
 
 ###############################################################################
 SAVeNoW - Zählschleifendaten Ingolstadt
@@ -12,7 +12,6 @@ SAVeNoW - Zählschleifendaten Ingolstadt
   :width: 140 px
   :align: center
   :target: https://www.savenow.de
-  :name: savenow_logo
 
 
 Die Stadt Ingolstadt stellt im Rahmen des Forschungsprojekts
@@ -30,7 +29,7 @@ Verkehrsaufkommen pro Fahrspur.
 .. figure:: img/sta-map-graph.jpg
   :width: 98 %
   :align: center
-  :name: intro_sta_map
+  :name: sta-map
 
   Zählschleifen und Zeitreihe der Zählungen an der Kreuzung
   Hindenburgstraße/Ringlerstraße.
@@ -50,33 +49,25 @@ im Internet bereitgestellt.
 
 Dafür hat der
 `Lehrstuhl für Geoinformatik, Technische Universität München (TUM) <https://www.asg.ed.tum.de/gis/startseite/>`_
-in Zusammenarbeit mit `e:fs <https://www.efs-auto.com/>`_ einen quelloffenen
+in Zusammenarbeit mit `e:fs <https://www.efs-techhub.com/>`_ einen quelloffenen
 *Internet of Things(IoT)* Anwendungsstack zusammengestellt.
 
 
 .. image:: img/icon/efs-logo.svg
   :width: 100 px
   :align: right
-  :target: https://www.efs-auto.com/
+  :target: https://www.efs-techhub.com/
 
 
 Der Stack wird in einem :ref:`services:Kubernetes`-Cluster in der
 `Microsoft Azure <https://azure.microsoft.com/de-de/>`_ Cloud
-gehostet. Er besteht aus mehreren :ref:`IoT-Diensten <services:iot-dienste>`
-zur Bereitstellung einer :ref:`standardisierte API <services:frost-server>` für den
-Zugriff auf die Daten.
+gehostet. Er besteht aus mehreren :ref:`IoT-Diensten <services:webdienste>`
+zur Bereitstellung einer :ref:`standardisierte API <standards:ogc sensorthingsapi>`
+für den Zugriff auf die Daten.
 Auf Basis dieser API sind mehrere Datendienste, wie z.B. eine
 :ref:`Übersichtskarte <services:zählschleifenkarte>` zur Lokalisierung der
-Zählschleifen (siehe :numref:`intro_sta_map`), sowie Werkzeugen zur
+Zählschleifen (siehe :numref:`sta-map` ), sowie Werkzeugen zur
 :ref:`Datenvisualisierung <services:grafana>`.
-
-
-.. table:: Vorschau der Zählschleifenkarte und der Verkehrsdashboards.
-  :align: center
-
-  +--------+--------+
-  | |fig1| | |fig2| |
-  +--------+--------+
 
 .. index:: ! Inhalt
 
@@ -93,13 +84,3 @@ Inhalt
   contact
 
 * :ref:`genindex`
-
-.. Figure replacements --------------------------------------------------------
-
-.. |fig1| image:: img/overview_map.jpg
-  :alt: SAVeNoW Zählschleifenkarte von Ingolstadt
-  :target: https://sta-rt.savenow.de/map/
-
-.. |fig2| image:: img/dashboard.jpg
-  :alt: Vorschaueines Grafana Dashboards für die Krezung Nürnbergerstr./Theodor-Heuss-Str.
-  :target: https://sta-rt.savenow.de/grafana/
