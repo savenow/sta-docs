@@ -45,12 +45,12 @@ extensions = [
     'sphinx_rtd_theme',
     'sphinx_copybutton',
     'sphinxemoji.sphinxemoji',
-    'sphinx.ext.autosectionlabel',
-    'sphinx_fontawesome'
+    'sphinx.ext.autosectionlabel'
 ]
 
 # Autosection labels
 autosectionlabel_prefix_document = True
+
 # suppress_warnings = ['autosectionlabel.*']
 
 # Add any paths that contain templates here, relative to this directory.
