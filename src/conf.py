@@ -46,7 +46,7 @@ extensions = [
     'sphinx_copybutton',
     'sphinxemoji.sphinxemoji',
     'sphinx.ext.autosectionlabel',
-    'sphinx_fontawesome',
+    'sphinx_fontawesome'
 ]
 
 # Autosection labels
@@ -141,7 +141,7 @@ html_static_path = ['_static']
 
 html_css_files = [
     # Path to custom css styles in _static/
-    'style.css',
+    'style.css'
 ]
 
 # -- Options for HTMLHelp output ---------------------------------------------
@@ -224,7 +224,6 @@ epub_exclude_files = ['search.html']
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = True
-
 
 # Numref
 # Figures
