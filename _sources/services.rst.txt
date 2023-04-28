@@ -80,7 +80,7 @@ mit der SensorThingsAPI verwaltet werden, auf einer `Leaflet <https://leafletjs.
 Webkarte. Eine Vorschau der Karte ist in :numref:`preview_map` und
 :numref:`preview_map_close` zu sehen.
 
-    |:map:| Hier geht's zur Karte: https://sta.savenow.de/map |:map:|
+    |:map:| Hier geht's zur Karte: https://sta-rt.savenow.de/map |:map:|
 
 .. figure:: img/overview_map.jpg
   :width: 98 %
