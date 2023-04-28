@@ -1,4 +1,4 @@
-.. index:: ! Home, SAVeNoW, ! Content
+.. index:: ! Home, ! SAVeNoW
 
 ###############################################################################
 SAVeNoW - Zählschleifendaten Ingolstadt
@@ -23,21 +23,23 @@ bis zu aktuellen Livedaten zur Verfügung.
 Jede Zählschleife liefert in einem 15 Minuten Intervall eine Zählung der Fahrzeuge,
 die die Schleife in der vergangenen Viertelstunde passiert haben.
 Die Zählschleifen sind an allen wichtigen Zufahrtsstraßen und Verkehrsknoten
-des Stadtgebiets verbaut und geben detailliert Auskunft über das
+im Stadtgebiet verbaut und geben detailliert Auskunft über das
 Verkehrsaufkommen pro Fahrspur.
 
 
 .. figure:: img/sta-map-graph.jpg
   :width: 98 %
   :align: center
-  :name:  intro_sta_map
+  :name: intro_sta_map
 
-  Zählschleifen und Zeitreihe der Zählungen an der Kreuzung Hindenburgstr./Ringlerstr.
+  Zählschleifen und Zeitreihe der Zählungen an der Kreuzung
+  Hindenburgstraße/Ringlerstraße.
 
 
-Um die Daten für die Projektpartner - und perspektivische die Bürger der Stadt -
+Um die Daten für die Projektpartner - und perspektivische die Bürger -
 nutzbar zu machen, werden die Daten aufbereitet und über eine
-*standardisierte Webschnittstelle* im Internet bereitgestellt.
+*standardisierte Webschnittstelle*, die :ref:`standards:ogc sensorthingsapi`,
+im Internet bereitgestellt.
 
 
 .. image:: img/icon/favicon_tum.svg
@@ -45,11 +47,11 @@ nutzbar zu machen, werden die Daten aufbereitet und über eine
   :align: right
   :target: https://www.asg.ed.tum.de/gis/startseite
 
+
 Dafür hat der
-`Lehrstuhl für Geoinformatik (TUM) <https://www.asg.ed.tum.de/gis/startseite/>`_
-in Zusammenarbeit mit `e:fs <https://www.efs-auto.com/>`_ einen
-quelloffenen IoT-Anwendungsstack auf Basis des internationalen Standards
-`OGC SensorThingsAPI <https://ogcapi.ogc.org/sensorthings/>`_  zusammengestellt.
+`Lehrstuhl für Geoinformatik, Technische Universität München (TUM) <https://www.asg.ed.tum.de/gis/startseite/>`_
+in Zusammenarbeit mit `e:fs <https://www.efs-auto.com/>`_ einen quelloffenen
+*Internet of Things(IoT)* Anwendungsstack zusammengestellt.
 
 
 .. image:: img/icon/efs-logo.svg
@@ -62,8 +64,10 @@ Der Stack wird in einem :ref:`services:Kubernetes`-Cluster in der
 `Microsoft Azure <https://azure.microsoft.com/de-de/>`_ Cloud
 gehostet. Er besteht aus mehreren :ref:`IoT-Diensten <services:iot-dienste>`
 zur Bereitstellung einer :ref:`standardisierte API <services:frost-server>` für den
-Zugriff auf die Daten, einer :ref:`Übersichtskarte <services:zählschleifenkarte>`
-für die Lokalisierung von Detektoren, sowie Werkzeugen zur
+Zugriff auf die Daten.
+Auf Basis dieser API sind mehrere Datendienste, wie z.B. eine
+:ref:`Übersichtskarte <services:zählschleifenkarte>` zur Lokalisierung der
+Zählschleifen (siehe :numref:`intro_sta_map`), sowie Werkzeugen zur
 :ref:`Datenvisualisierung <services:grafana>`.
 
 
@@ -73,6 +77,8 @@ für die Lokalisierung von Detektoren, sowie Werkzeugen zur
   +--------+--------+
   | |fig1| | |fig2| |
   +--------+--------+
+
+.. index:: ! Inhalt
 
 *******************************************************************************
 Inhalt
