@@ -113,6 +113,7 @@ Grafana
   :align: right
   :alt: Grafana logo
 
+
 Grafana ist eine plattformübergreifende Open-Source-Anwendung zur grafischen
 Darstellung von Daten aus verschiedenen Datenquellen wie z. B. InfluxDB, MySQL,
 PostgreSQL, oder der :ref:`standards:ogc sensorthingsapi`.
@@ -145,9 +146,8 @@ in wenigen Klicks zusammengestellt werden.
 Referenzen zu Grafana
 ===============================================================================
 
-* Offizielle Webseite: https://grafana.com/
+* Offizielle Webseite: https://grafana.com
 * Github: https://github.com/grafana/grafana
-* LinkSmart OGC SensorThingsAPI Plugin: https://github.com/linksmart/grafana-sensorthings-datasource
 * Fraunhofer IOSB FROST-SensorThingsAPI Plugin: https://github.com/FraunhoferIOSB/frost-sensorthings-datasource
 
 .. index:: Kubernetes, k8s, Cloud, Azure
