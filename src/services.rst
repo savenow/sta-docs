@@ -65,7 +65,7 @@ Funktionen
 Referenzen zum FROST-Server
 ===============================================================================
 
-* Offizielle Website: https://www.iosb.fraunhofer.de/de/projekte-produkte/frostserver.html
+* Offizielle Webseite: https://www.iosb.fraunhofer.de/de/projekte-produkte/frostserver.html
 * Github: https://github.com/FraunhoferIOSB/FROST-Server
 * Dokumentation: https://fraunhoferiosb.github.io/FROST-Server/
 
@@ -120,13 +120,14 @@ Die erfassten Rohdaten lassen sich anschließend in verschiedenen Anzeigeformen 
 Diese können dann zu sogenannten Dashboards zusammengefügt werden.
 Die Anzeigemöglichkeiten und Datenquellen können zudem mittels Plugins erweitert werden.
 Auf diese Weise wird auch der FROST-Server direkt unterstützt und es können
-ohne Programmierkenntnisse Dashboards in wenigen Klicks zusammengestellt werden.
+ohne Programmierkenntnisse Dashboards (siehe :numref:`dashboard_ges`, :numref:`dashboard_detail` )
+in wenigen Klicks zusammengestellt werden.
 
 .. figure:: img/dashboard-hm.jpg.png
   :width: 98 %
   :alt: Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str.
   :align: center
-  :name: grafana
+  :name: dashboard_ges
   :target: https://sta.savenow.de/grafana/
 
   Vorschau Dashboard zur Verkehrsstärke in Ingolstadt.
@@ -134,7 +135,7 @@ ohne Programmierkenntnisse Dashboards in wenigen Klicks zusammengestellt werden.
 .. figure:: img/dashboard.jpg
   :width: 98 %
   :align: center
-  :name: grafana
+  :name: dashboard_detail
   :target: https://sta.savenow.de/grafana/
 
   Vorschau Dashboard zur Verkehrsstärke an der Kreuzung Nürnbergerstr./Theodor-Heuss-Straße.
@@ -144,10 +145,10 @@ ohne Programmierkenntnisse Dashboards in wenigen Klicks zusammengestellt werden.
 Referenzen zu Grafana
 ===============================================================================
 
-* Official website: https://grafana.com/
+* Offizielle Webseite: https://grafana.com/
 * Github: https://github.com/grafana/grafana
 * LinkSmart OGC SensorThingsAPI Plugin: https://github.com/linksmart/grafana-sensorthings-datasource
-* Fraunhofer IOSB SensorThingsAPI Plugin:
+* Fraunhofer IOSB FROST-SensorThingsAPI Plugin: https://github.com/FraunhoferIOSB/frost-sensorthings-datasource
 
 .. index:: Kubernetes, k8s, Cloud, Azure
 
