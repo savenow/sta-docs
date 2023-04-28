@@ -29,8 +29,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Stichwortverzeichnis" href="genindex.html" />
     <link rel="search" title="Suche" href="search.html" />
-    <link rel="next" title="Data" href="data.html" />
-    <link rel="prev" title="SAVeNoW - SensorThingsAPI" href="index.html" /> 
+    <link rel="next" title="Contact" href="contact.html" />
+    <link rel="prev" title="Standsards" href="standards.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -56,6 +56,15 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="data.html">Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data.html#detector-loop-data">Detector loop data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html#weather-station-data">Weather station data</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="standards.html">Standsards</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="standards.html#ogc-sensorthingsapi">OGC SensorThingsAPI</a></li>
+</ul>
+</li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">IoT-Dienste</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#zugang-zu-den-diensten">Zugang zu den Diensten</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#zahlschleifenkarte">Zählschleifenkarte</a></li>
@@ -63,11 +72,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#grafana">Grafana</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#node-red">Node-RED</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#kubernetes">Kubernetes</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="data.html">Data</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data.html#detector-loop-data">Detector loop data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data.html#weather-station-data">Weather station data</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
@@ -112,21 +116,21 @@ nehmen Sie gerne <a class="reference internal" href="contact.html#contact"><span
 <span id="index-2"></span><h2>Zählschleifenkarte<a class="headerlink" href="#zahlschleifenkarte" title="Permalink to this heading"></a></h2>
 <p>Die <em>Detector loop map</em> visualisiert alle Zählschleifen in Ingolstadt, die
 mit der SensorThingsAPI verwaltet werden, auf einer <a class="reference external" href="https://leafletjs.com/">Leaflet</a>
-Webkarte. Eine Vorschau der Karte ist in <a class="reference internal" href="#preview-map"><span class="std std-numref">Abb. 1</span></a> und
-<a class="reference internal" href="#preview-map-close"><span class="std std-numref">Abb. 2</span></a> zu sehen.</p>
+Webkarte. Eine Vorschau der Karte ist in <a class="reference internal" href="#preview-map"><span class="std std-numref">Abb. 2</span></a> und
+<a class="reference internal" href="#preview-map-close"><span class="std std-numref">Abb. 3</span></a> zu sehen.</p>
 <blockquote>
 <div><p> Hier geht’s zur Karte: <a class="reference external" href="https://sta.savenow.de/map">https://sta.savenow.de/map</a> </p>
 </div></blockquote>
 <figure class="align-center" id="preview-map">
 <a class="reference internal image-reference" href="_images/overview_map.jpg"><img alt="SAVeNoW Detector loop map for Ingolstadt" src="_images/overview_map.jpg" style="width: 98%;" /></a>
 <figcaption>
-<p><span class="caption-number">Abb. 1 </span><span class="caption-text">Preview of the SAVeNoW detector loop map.</span><a class="headerlink" href="#preview-map" title="Link zu diesem Bild"></a></p>
+<p><span class="caption-number">Abb. 2 </span><span class="caption-text">Preview of the SAVeNoW detector loop map.</span><a class="headerlink" href="#preview-map" title="Link zu diesem Bild"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="preview-map-close">
 <a class="reference internal image-reference" href="_images/map_close.jpg"><img alt="SAVeNoW Detector loop map closeup intersection Hindenburgstr./Ringlerstr." src="_images/map_close.jpg" style="width: 98%;" /></a>
 <figcaption>
-<p><span class="caption-number">Abb. 2 </span><span class="caption-text">SAVeNoW Detector loop map closeup intersection Hindenburgstr./Ringlerstr.</span><a class="headerlink" href="#preview-map-close" title="Link zu diesem Bild"></a></p>
+<p><span class="caption-number">Abb. 3 </span><span class="caption-text">SAVeNoW Detector loop map closeup intersection Hindenburgstr./Ringlerstr.</span><a class="headerlink" href="#preview-map-close" title="Link zu diesem Bild"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -195,7 +199,7 @@ ohne zu programmieren in wenigen Klicks zusammengestellt werden.</p>
 <figure class="align-center" id="id1">
 <a class="reference external image-reference" href="https://sta.savenow.de/grafana/"><img alt="Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str." src="_images/dashboard.jpg" style="width: 98%;" /></a>
 <figcaption>
-<p><span class="caption-number">Abb. 3 </span><span class="caption-text">Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str.</span><a class="headerlink" href="#id1" title="Link zu diesem Bild"></a></p>
+<p><span class="caption-number">Abb. 4 </span><span class="caption-text">Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str.</span><a class="headerlink" href="#id1" title="Link zu diesem Bild"></a></p>
 </figcaption>
 </figure>
 </section>
@@ -232,8 +236,8 @@ Microsoft Azure Cloud gehostet. Der verwendete Helm Chart ist hier verfügbar:</
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="index.html" class="btn btn-neutral float-left" title="SAVeNoW - SensorThingsAPI" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Zurück</a>
-        <a href="data.html" class="btn btn-neutral float-right" title="Data" accesskey="n" rel="next">Weiter <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="standards.html" class="btn btn-neutral float-left" title="Standsards" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Zurück</a>
+        <a href="contact.html" class="btn btn-neutral float-right" title="Contact" accesskey="n" rel="next">Weiter <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
