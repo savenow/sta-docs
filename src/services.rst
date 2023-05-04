@@ -10,9 +10,9 @@ Webdienste
 Zugang zu den Diensten
 *******************************************************************************
 
-Die Webdienste und der SensorThingsAPI API-Zugang sind aktuell noch
+Die Webdienste und der API-Zugang sind aktuell noch
 passwortgeschützt. Die Zugangsdaten zu den Diensten sind für die Projektpartner
-hier hinterlegt.
+von SAVeNoW hier hinterlegt:
 
 |:arrow_right:| `SAVeNoW Confluence - SensorThingsAPI <https://collaboration.msi.audi.com/confluence/display/SAVE/SensorThingsAPI>`_
 
@@ -26,8 +26,8 @@ FROST-Server
 *******************************************************************************
 
 Der FROST-Server stellt die SensorThingsAPI als Webanwendung bereit.
-Alle hier beschriebenen Datendienste greifen auf die API um die Zählschleifendaten
-abzurufen.
+Alle hier beschriebenen Datendienste greifen auf die API zu, um die 
+Zählschleifendaten abzurufen.
 
 |:rocket:| Hier geht's zum FROST-Server: https://sta-rt.savenow.de/frost |:rocket:|
 
@@ -36,7 +36,7 @@ abzurufen.
   :align: right
   :alt: FROST-Server logo
 
-Der FROST-Server ist eine Open Source Server-Implementierung der
+Der FROST-Server ist eine Open-Source-Server-Implementierung der
 :ref:`standards:ogc sensorthingsapi`. Er ist in Java geschrieben und kann in
 Tomcat oder Wildfly laufen und ist als Docker-Image verfügbar.
 Zu seinen vielen Funktionen gehört die Möglichkeit, String- oder UUID-basierte
@@ -50,13 +50,13 @@ gehalten werden.
 Funktionen
 ===============================================================================
 
-* Basiert auf SensorThings API, einem Standard des OGC
+* Basiert auf SensorThingsAPI, einem Standard des OGC
 * Hohe Leistungsfähigkeit
 * Geringer Ressourcenverbrauch
 * Open Source: Volle Transparenz bei der Software
 
   * Offenheit gegenüber Erweiterungen von Anwendern
-  * Offene Verfügbarkeit der Software garantiert langfristige Verfügbarkeit und
+  * Offenheit der Software garantiert langfristige Verfügbarkeit und
     ermöglicht strategische Entscheidungen
 
 
@@ -97,7 +97,7 @@ Webkarte. Eine Vorschau der Karte ist in :numref:`preview_map` und
   :name: preview_map_close
 
   Detailansicht der SAVeNoW Zählschleifenkarte für die
-  Kreuzung Hindenburgstraße/Ringlerstraße. Die Livedaten der Verkehrszählungen
+  Kreuzung Hindenburg-/Ringlerstraße. Die Livedaten der Verkehrszählungen
   werden bei Klick in einem Popup als Zeitreihe visualisiert.
 
 .. index:: Grafana, Dashboard
@@ -115,8 +115,8 @@ Grafana
 
 
 Grafana ist eine plattformübergreifende Open-Source-Anwendung zur grafischen
-Darstellung von Daten aus verschiedenen Datenquellen wie z. B. InfluxDB, MySQL,
-PostgreSQL, oder der :ref:`standards:ogc sensorthingsapi`.
+Darstellung von Daten aus verschiedenen Datenquellen wie z.B. InfluxDB, MySQL,
+PostgreSQL oder der :ref:`standards:ogc sensorthingsapi`.
 Die erfassten Rohdaten lassen sich anschließend in verschiedenen Anzeigeformen ausgeben.
 Diese können dann zu sogenannten Dashboards zusammengefügt werden.
 Die Anzeigemöglichkeiten und Datenquellen können zudem mittels Plugins erweitert werden.
@@ -139,7 +139,7 @@ in wenigen Klicks zusammengestellt werden.
   :name: dashboard_detail
   :target: https://sta.savenow.de/grafana/
 
-  Vorschau Dashboard zur Verkehrsstärke an der Kreuzung Nürnbergerstr./Theodor-Heuss-Straße.
+  Vorschau Dashboard zur Verkehrsstärke an der Kreuzung Nürnberger-/Theodor-Heuss-Straße.
 
 .. index:: Grafana; Referenzen
 
@@ -162,10 +162,10 @@ Kubernetes
   :alt: FROST-Server logo
 
 Kubernetes ist ein von Google entwickeltes Open-Source-System zur Verwaltung von
-Container Anwendungen. In diesem Umfeld wird die Verwaltung der technischen Container
-Infrastruktur auch als Orchestrierung bezeichnet.
+Container-Anwendungen. In diesem Umfeld wird die Verwaltung der technischen 
+Container-Infrastruktur auch als Orchestrierung bezeichnet.
 
-Die hier gelisteten Services werden in einem Kubernetes Cluster in der
+Die hier gelisteten Services werden in einem Kubernetes-Cluster in der
 Microsoft Azure Cloud gehostet. Der verwendete Helm Chart ist hier verfügbar:
 
     |:rocket:| Hier geht's zum Helm Chart:

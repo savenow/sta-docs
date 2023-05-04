@@ -16,13 +16,13 @@ Die `Open Geospatial Consortium (OGC) <https://www.ogc.org/>`_
 SensorThingsAPI bietet eine offene, raumbezogene und einheitliche Möglichkeit,
 Geräte, Daten und Anwendungen des Internets der Dinge (IoT) über das Web miteinander
 zu verbinden.
-Im wesentlichen bietet die OGC SensorThings API zwei Hauptfunktionalitäten,
+Im Wesentlichen bietet die OGC SensorThingsAPI zwei Hauptfunktionalitäten,
 wobei jede Funktion von einem Teil des Standards gehandhabt wird.
-Die beiden Teile sind der Sensing-Teil und der Tasking-Teil.
+Die beiden Teile sind der Sensing und der Tasking.
 Der Sensing-Teil bietet eine Standardmethode zum Verwalten und Abrufen von
-Beobachtungen und Metadaten aus heterogenen IoT-Sensorsystemen.
+Beobachtungen und Metadaten aus heterogenen IoT-Sensorsystemen
 Der Tasking-Teil ist als zukünftige Arbeitsaktivität geplant und wird in einem
-separaten Dokument als Teil II der SensorThingsAPI definiert werden.
+separaten Dokument als Teil II der SensorThingsAPI definiert.
 
 .. index:: SensorThingsAPI; Datenmodell
 
@@ -35,7 +35,7 @@ Datenmodell
   :align: center
   :name: sta-model
 
-  Datenmodell der SensorThingsAPI.
+  Datenmodell der SensorThingsAPI
 
 :numref:`sta-model` zeigt das Datenmodell der SensorThingsAPI. Sensorknoten werden
 als ``Thing`` modelliert, denen eine ``Location`` zugewiesen werden kann.
@@ -50,8 +50,8 @@ der ``Thing``, ``Sensor`` und ``ObservedProperty`` in Bezug setzt.
 Implementierungen der SensorThingsAPI
 *******************************************************************************
 
-Es existieren mehrere Implementierungen des SensorThingsAPI Standards. An dieser
-Stelle wird nur die hier verwendete Implementierung aufgeführt.
+Es existieren mehrere Implementierungen des SensorThingsAPI Standards. Nähere Informationen
+zur hier verwendeten Implementierung sind hier zu finden: 
 
 |:arrow_right:| `Fraunhofer IOSB FROST-Server <https://www.iosb.fraunhofer.de/en/projects-and-products/frost-server.html>`_
 

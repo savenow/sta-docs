@@ -1,11 +1,11 @@
 .. index:: !Startseite, ! SAVeNoW
 
 ###############################################################################
-SAVeNoW - Zählschleifendaten Ingolstadt
+SAVeNoW - Verkehrsdaten von Ingolstadt
 ###############################################################################
 
-  *Offene Standards und Dienste für die Verwaltung von Zählschleifendaten aus
-  Ingolstadt in der Cloud*
+  *Verwaltung von Zählschleifendaten mithilfe offener Standards und Dienste in 
+  der Cloud*
 
 
 .. image:: img/icon/savenow-logo.png
@@ -15,15 +15,18 @@ SAVeNoW - Zählschleifendaten Ingolstadt
 
 
 Die Stadt Ingolstadt stellt im Rahmen des Forschungsprojekts
-`SAVeNoW <https://www.savenow.de/>`_ Daten der Kfz-Zählschleifen aus dem
-gesamten Stadtgebiet für den Zeitraum von August 2019
-bis zu aktuellen Livedaten zur Verfügung.
+`SAVeNoW <https://www.savenow.de/>`_ Zählwerte von Kraftfahrzeugen aus dem
+gesamten Stadtgebiet für den Zeitraum seit August 2019 zur Verfügung sowie
+die aktuellen Livedaten.
 
-Jede Zählschleife liefert in einem 15 Minuten Intervall eine Zählung der Fahrzeuge,
-die die Schleife in der vergangenen Viertelstunde passiert haben.
-Die Zählschleifen sind an allen wichtigen Zufahrtsstraßen und Verkehrsknoten
-im Stadtgebiet verbaut und geben detailliert Auskunft über das
-Verkehrsaufkommen pro Fahrspur.
+Diese Zählwerte kommen von sogenannten Zählschleifen, die an allen 
+wichtigen Kreuzungen mit Ampelanlage in der Straße je Fahrspur 
+verbaut sind. 
+Jede Zählschleife liefert alle 15 Minuten eine Zählung der Fahrzeuge, 
+die die Schleife in der vergangenen Viertelstunde überfahren haben. Somit 
+liegt das Verkehrsaufkommen für die wichtigsten Knotenpunkte in Ingolstadt 
+spurgenau als 15-Minuten-Aggregate vor.
+
 
 
 .. figure:: img/sta-map-graph.jpg
@@ -32,11 +35,11 @@ Verkehrsaufkommen pro Fahrspur.
   :name: sta-map
 
   Zählschleifen und Zeitreihe der Zählungen an der Kreuzung
-  Hindenburgstraße/Ringlerstraße.
+  Hindenburg-/Ringlerstraße
 
 
-Um die Daten für die Projektpartner - und perspektivische die Bürger -
-nutzbar zu machen, werden die Daten aufbereitet und über eine
+Um die Daten für die Partner des Forschungsprojekts - und perspektivische die 
+Bürger Ingolstadts - nutzbar zu machen, werden die Daten aufbereitet und über eine
 *standardisierte Webschnittstelle*, die :ref:`standards:ogc sensorthingsapi`,
 im Internet bereitgestellt.
 
@@ -50,7 +53,7 @@ im Internet bereitgestellt.
 Dafür hat der
 `Lehrstuhl für Geoinformatik, Technische Universität München (TUM) <https://www.asg.ed.tum.de/gis/startseite/>`_
 in Zusammenarbeit mit `e:fs <https://www.efs-techhub.com/>`_ einen quelloffenen
-*Internet of Things(IoT)* Anwendungsstack zusammengestellt.
+*Internet of Things (IoT)* Anwendungsstack zusammengestellt.
 
 
 .. image:: img/icon/efs-logo.svg
@@ -62,12 +65,12 @@ in Zusammenarbeit mit `e:fs <https://www.efs-techhub.com/>`_ einen quelloffenen
 Der Stack wird in einem :ref:`services:Kubernetes`-Cluster in der
 `Microsoft Azure <https://azure.microsoft.com/de-de/>`_ Cloud
 gehostet. Er besteht aus mehreren :ref:`IoT-Diensten <services:webdienste>`
-zur Bereitstellung einer :ref:`standardisierte API <standards:ogc sensorthingsapi>`
+zur Bereitstellung einer :ref:`standardisierten API <standards:ogc sensorthingsapi>`
 für den Zugriff auf die Daten.
 Auf Basis dieser API sind mehrere Datendienste, wie z.B. eine
-:ref:`Übersichtskarte <services:zählschleifenkarte>` zur Lokalisierung der
+:ref:`Übersichtskarte <services:Zählschleifenkarte>` zur Lokalisierung der
 Zählschleifen (siehe :numref:`sta-map` ), sowie Werkzeugen zur
-:ref:`Datenvisualisierung <services:grafana>`.
+:ref:`Datenvisualisierung <services:grafana>` erstellt worden.
 
 .. index:: ! Inhalt
 
