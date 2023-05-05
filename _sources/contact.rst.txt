@@ -1,7 +1,4 @@
-.. index:: ! Kontakt, ! Support, ! Impressum
-
-
-.. index:: Impressum
+.. index:: ! Impressum
 
 ###############################################################################
 Impressum
@@ -33,6 +30,8 @@ Datenschutzerklärung
 
 Die `Datenschutzerklärung <https://savenow.de/de/privacy/>`_
 finden Sie auf der **SAVeNoW** Hauptseite.
+
+.. index:: ! Kontakt
 
 ###############################################################################
 Kontakt
