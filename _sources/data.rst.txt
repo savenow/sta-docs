@@ -97,9 +97,9 @@ zu untersuchen und diese zu modellieren.
 
 .. index:: Wetterdaten; Datenstruktur
 
-*******************************************************************************
+
 Datenstruktur
-*******************************************************************************
+===============================================================================
 
 Genaue Informationen zu den einzelnen Messgrößen, wie deren Struktur,
 Einheit und Beschreibung, können den ``Datastreams``, zum entsprechenden ``Thing`` *Weatherstation*
@@ -107,9 +107,9 @@ entnommen werden (siehe auch :ref:`standards:datenmodell`).
 
 .. index:: Wetterdaten; Referenzen
 
-*******************************************************************************
+
 Referenzen
-*******************************************************************************
+===============================================================================
 
 * Kettelgerdes, M. Elger, G. (**2023**): *In-field Measurement and Methodology for Modeling and Validation of Precipitation Effects on Solid-State LiDAR Sensors*.
   IEEE J. Radio Freq. Identif. (IEEE Journal of Radio Frequency Identification).
