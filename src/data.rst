@@ -44,6 +44,8 @@ bis die Daten über die Schnittstelle erreichbar sind.
   :align: center
   :name: detector_locations
 
+  Übersicht zu den Detektorpositionen in Ingolstadt.
+
 .. index:: Wetterdaten
 
 *******************************************************************************
