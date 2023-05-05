@@ -16,6 +16,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
+import sphinx_fontawesome
 
 # -- Project information -----------------------------------------------------
 
@@ -44,8 +45,8 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx_rtd_theme',
     'sphinx_copybutton',
-    'sphinxemoji.sphinxemoji',
-    'sphinx.ext.autosectionlabel'
+    'sphinx.ext.autosectionlabel',
+    'sphinx_fontawesome'
 ]
 
 # Autosection labels
