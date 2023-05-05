@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Data &mdash; SAVeNoW - SensorThingsAPI 0.0.1 Dokumentation</title>
+  <title>Daten &mdash; SAVeNoW - SensorThingsAPI 0.0.1 Dokumentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/copybutton.css" type="text/css" />
@@ -56,9 +56,9 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Data</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#detector-loop-data">Detector loop data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#weather-station-data">Weather station data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Daten</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#zahlschleifendaten">Zählschleifendaten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wetterdaten">Wetterdaten</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="standards.html">Standards</a><ul>
@@ -100,7 +100,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Data</li>
+      <li class="breadcrumb-item active">Daten</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/data.rst.txt" rel="nofollow"> Quelltext anzeigen</a>
       </li>
@@ -110,15 +110,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="data">
-<span id="index-0"></span><h1>Data<a class="headerlink" href="#data" title="Permalink to this heading"></a></h1>
-<p><strong>This website is under construction!</strong></p>
-<a class="reference external image-reference" href="https://www.savenow.de"><img alt="_images/under-construction.png" class="align-center" src="_images/under-construction.png" style="width: 100px;" /></a>
-<section id="detector-loop-data">
-<span id="index-1"></span><h2>Detector loop data<a class="headerlink" href="#detector-loop-data" title="Permalink to this heading"></a></h2>
+  <section id="daten">
+<span id="index-0"></span><h1>Daten<a class="headerlink" href="#daten" title="Permalink to this heading"></a></h1>
+<section id="zahlschleifendaten">
+<span id="index-1"></span><h2>Zählschleifendaten<a class="headerlink" href="#zahlschleifendaten" title="Permalink to this heading"></a></h2>
+<p>An den meisten Ampel-Kreuzungen im Stadtgebiet von Ingolstadt sind in den
+Fahrspuren Verkehrsdetektoren in Form von Induktionsschleifen
+(siehe <code class="xref std std-numref docutils literal notranslate"><span class="pre">detector_locations</span></code>) eingelassen.
+Diese erkennen ein darüberfahrendes Fahrzeug und meldet dieses an die
+Ampelsteuerung.
+Das Ampelprogramm nutzt diese Informationen zur bedarfsgerechten Regelung der
+Kreuzung.</p>
+<p>Daneben findet eine zentrale Ablage der Zählereignisse auf dem Verkehrsserver
+der Stadt Ingolstadt statt.
+Im Abstand von 15 Minuten wird ein Zählwert je Detektor für den Zeitraum auf dem
+Server abgelegt.
+Die Daten liegen jedoch auf zugangsbeschränkten Server nicht in einer Form vor,
+die eine einfache Handhabe und Weiterverarbeitung ermöglichen.</p>
+<p>Durch die Arbeit im Forschungsprojekt SAVeNoW werden die Daten regelmäßig vom
+Verkehrsserver der Stadt abgerufen, bereinigt, formatiert und in den beschriebenen
+<a class="reference internal" href="services.html#frost-server"><span class="std std-ref">SensorThingsAPI-Server</span></a> hochgeladen.
+Außerdem wird ein aggregierter Zählwert für die gesamte Kreuzung berechnet.
+Neben der Vorverarbeitung der Daten werden diese mit Metainformationen und
+Georeferenzen zu den Detektorpositionen angereichert.</p>
+<p>Nach dem Hochladen sind sie über die standardisierte Schnittstelle abrufbar.
+Aktuell besteht eine Verzögerung von 3-4 Minuten nach Ablauf der Zählperiode,
+bis die Daten über die Schnittstelle erreichbar sind.</p>
+<figure class="align-center" id="detector-locations">
+<a class="reference internal image-reference" href="_images/detector-locations.jpg"><img alt="Positionen der Zählschleifen in Ingolstadt" src="_images/detector-locations.jpg" style="width: 98%;" /></a>
+</figure>
 </section>
-<section id="weather-station-data">
-<span id="index-2"></span><h2>Weather station data<a class="headerlink" href="#weather-station-data" title="Permalink to this heading"></a></h2>
+<section id="wetterdaten">
+<span id="index-2"></span><h2>Wetterdaten<a class="headerlink" href="#wetterdaten" title="Permalink to this heading"></a></h2>
 </section>
 </section>
 
