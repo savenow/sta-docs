@@ -4,7 +4,7 @@
 Webdienste
 ###############################################################################
 
-.. index:: Zugang erhalten, Zugang Webdienste
+.. index:: Webdienst; Zugang erhalten
 
 *******************************************************************************
 Zugang zu den Diensten
@@ -19,7 +19,7 @@ von SAVeNoW hier hinterlegt:
 Wenn Sie sich für die Daten und Dienste interessieren und keinen Zugang haben,
 nehmen Sie gerne :ref:`Kontakt <contact:kontakt>` mit uns auf.
 
-.. index:: ! FROST-Server, SensorThingsAPI, API
+.. index:: ! FROST-Server, SensorThingsAPI, API, Webdienst; FROST-Server
 
 *******************************************************************************
 FROST-Server
@@ -69,16 +69,16 @@ Referenzen zum FROST-Server
 * Github: https://github.com/FraunhoferIOSB/FROST-Server
 * Dokumentation: https://fraunhoferiosb.github.io/FROST-Server/
 
-.. index:: Zählschleifenkarte, Karte
+.. index:: Zählschleifenkarte, Karte, Webdienst; Zählschleifenkarte
 
 *******************************************************************************
 Zählschleifenkarte
 *******************************************************************************
 
-Die Zählschleifenkarte visualisiert alle Zählschleifen in Ingolstadt, die
-mit der SensorThingsAPI verwaltet werden, auf einer `Leaflet <https://leafletjs.com/>`_
-Webkarte. Eine Vorschau der Karte ist in :numref:`preview_map` und
-:numref:`preview_map_close` zu sehen.
+Die *Zählschleifenkarte* visualisiert alle Zählschleifen in Ingolstadt, die
+mit der :ref:`standards:ogc sensorthingsapi`  verwaltet werden, auf einer
+`Leaflet <https://leafletjs.com/>`_ Webkarte. Eine Vorschau der Karte ist in
+:numref:`preview_map` und :numref:`preview_map_close` zu sehen.
 
     |map| Hier geht's zur Karte: https://sta-rt.savenow.de/map
 
@@ -100,7 +100,7 @@ Webkarte. Eine Vorschau der Karte ist in :numref:`preview_map` und
   Kreuzung Hindenburg-/Ringlerstraße. Die Livedaten der Verkehrszählungen
   werden bei Klick in einem Popup als Zeitreihe visualisiert.
 
-.. index:: Grafana, Dashboard
+.. index:: Grafana, Dashboard, Webdienst; Grafana
 
 *******************************************************************************
 Grafana
