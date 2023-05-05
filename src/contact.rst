@@ -108,4 +108,4 @@ den :ref:`Webdiensten <services:webdienste>`? Melden Sie sich gerne bei uns!
 .. |efs_bb| image:: img/icon/efs-logo.svg
   :width: 30 px
   :align: middle
-  :target: https://www.efs-auto.com/
+  :target: https://www.efs-techhub.com/
