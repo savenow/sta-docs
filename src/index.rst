@@ -7,12 +7,10 @@ SAVeNoW - Verkehrsdaten von Ingolstadt
   *Verwaltung von Zählschleifendaten mithilfe offener Standards und Dienste in
   der Cloud*
 
-
 .. image:: img/icon/savenow-logo.png
   :width: 140 px
   :align: center
   :target: https://www.savenow.de
-
 
 Die Stadt Ingolstadt stellt im Rahmen des Forschungsprojekts
 `SAVeNoW <https://www.savenow.de/>`_ Zählwerte von Kraftfahrzeugen aus dem
@@ -27,40 +25,33 @@ die die Schleife in der vergangenen Viertelstunde überfahren haben. Somit
 liegt das Verkehrsaufkommen für die wichtigsten Knotenpunkte in Ingolstadt
 spurgenau als 15-Minuten-Aggregate vor.
 
-
-
 .. figure:: img/sta-map-graph.jpg
   :width: 98 %
   :align: center
   :name: sta_map
 
   Zählschleifen und Zeitreihe der Zählungen an der Kreuzung
-  Hindenburg-/Ringlerstraße
-
+  Hindenburg-/Ringlerstraße.
 
 Um die Daten für die Partner des Forschungsprojekts - und perspektivische die
 Bürger Ingolstadts - nutzbar zu machen, werden die Daten aufbereitet und über eine
 *standardisierte Webschnittstelle*, die :ref:`standards:ogc sensorthingsapi`,
 im Internet bereitgestellt.
 
-
 .. image:: img/icon/favicon_tum.svg
   :width: 100 px
   :align: right
   :target: https://www.asg.ed.tum.de/gis/startseite
-
 
 Dafür hat der
 `Lehrstuhl für Geoinformatik, Technische Universität München (TUM) <https://www.asg.ed.tum.de/gis/startseite/>`_
 in Zusammenarbeit mit `e:fs <https://www.efs-techhub.com/>`_ einen quelloffenen
 *Internet of Things (IoT)* Anwendungsstack zusammengestellt.
 
-
 .. image:: img/icon/efs-logo.svg
   :width: 100 px
   :align: right
   :target: https://www.efs-techhub.com/
-
 
 Der Stack wird in einem :ref:`services:Kubernetes`-Cluster in der
 `Microsoft Azure <https://azure.microsoft.com/de-de/>`_ Cloud
