@@ -10,7 +10,7 @@ Standards
 OGC SensorThingsAPI
 *******************************************************************************
 
-|:arrow_right:| `OGC SensorThingsAPI Homepage <https://ogcapi.ogc.org/sensorthings/>`_
+|arrow-circle-right| `OGC SensorThingsAPI Homepage <https://ogcapi.ogc.org/sensorthings/>`_
 
 Die `Open Geospatial Consortium (OGC) <https://www.ogc.org/>`_
 SensorThingsAPI bietet eine offene, raumbezogene und einheitliche Möglichkeit,
@@ -51,9 +51,9 @@ Implementierungen der SensorThingsAPI
 *******************************************************************************
 
 Es existieren mehrere Implementierungen des SensorThingsAPI Standards. Nähere Informationen
-zur hier verwendeten Implementierung sind hier zu finden: 
+zur hier verwendeten Implementierung sind hier zu finden:
 
-|:arrow_right:| `Fraunhofer IOSB FROST-Server <https://www.iosb.fraunhofer.de/en/projects-and-products/frost-server.html>`_
+|arrow-circle-right| `Fraunhofer IOSB FROST-Server <https://www.iosb.fraunhofer.de/en/projects-and-products/frost-server.html>`_
 
 .. index:: SensorThingsAPI; Referenzen
 

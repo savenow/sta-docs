@@ -14,10 +14,10 @@ Die Webdienste und der API-Zugang sind aktuell noch
 passwortgeschützt. Die Zugangsdaten zu den Diensten sind für die Projektpartner
 von SAVeNoW hier hinterlegt:
 
-|:arrow_right:| `SAVeNoW Confluence - SensorThingsAPI <https://collaboration.msi.audi.com/confluence/display/SAVE/SensorThingsAPI>`_
+|arrow-circle-right| `SAVeNoW Confluence - SensorThingsAPI <https://collaboration.msi.audi.com/confluence/display/SAVE/SensorThingsAPI>`_
 
 Wenn Sie sich für die Daten und Dienste interessieren und keinen Zugang haben,
-nehmen Sie gerne :ref:`Kontakt <contact:contact>` mit uns auf.
+nehmen Sie gerne :ref:`Kontakt <contact:kontakt>` mit uns auf.
 
 .. index:: ! FROST-Server, SensorThingsAPI, API
 
@@ -29,7 +29,7 @@ Der FROST-Server stellt die SensorThingsAPI als Webanwendung bereit.
 Alle hier beschriebenen Datendienste greifen auf die API zu, um die
 Zählschleifendaten abzurufen.
 
-|:rocket:| Hier geht's zum FROST-Server: https://sta-rt.savenow.de/frost |:rocket:|
+|code| Hier geht's zum FROST-Server: https://sta-rt.savenow.de/frost
 
 .. image:: img/icon/frost-server-icon.png
   :width: 120 px
@@ -80,7 +80,7 @@ mit der SensorThingsAPI verwaltet werden, auf einer `Leaflet <https://leafletjs.
 Webkarte. Eine Vorschau der Karte ist in :numref:`preview_map` und
 :numref:`preview_map_close` zu sehen.
 
-    |:map:| Hier geht's zur Karte: https://sta-rt.savenow.de/map |:map:|
+    |map| Hier geht's zur Karte: https://sta-rt.savenow.de/map
 
 .. figure:: img/overview_map.jpg
   :width: 98 %
@@ -106,7 +106,7 @@ Webkarte. Eine Vorschau der Karte ist in :numref:`preview_map` und
 Grafana
 *******************************************************************************
 
-    |:rocket:| Hier geht's zu Grafana: https://sta-rt.savenow.de/grafana |:rocket:|
+  |line-chart| Hier geht's zu Grafana: https://sta-rt.savenow.de/grafana
 
 .. image:: img/icon/grafana-icon.jpg
   :width: 70 px
@@ -168,6 +168,4 @@ Container-Infrastruktur auch als Orchestrierung bezeichnet.
 Die hier gelisteten Services werden in einem Kubernetes-Cluster in der
 Microsoft Azure Cloud gehostet. Der verwendete Helm Chart ist hier verfügbar:
 
-    |:rocket:| Hier geht's zum Helm Chart:
-    https://github.com/tum-gis/tum-gis-iot-stack-k8s
-    |:rocket:|
+  |cogs| Hier geht's zum Helm Chart: https://github.com/tum-gis/tum-gis-iot-stack-k8s
