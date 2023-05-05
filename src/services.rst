@@ -29,7 +29,7 @@ Der FROST-Server stellt die SensorThingsAPI als Webanwendung bereit.
 Alle hier beschriebenen Datendienste greifen auf die API zu, um die
 Zählschleifendaten abzurufen.
 
-|code| Hier geht's zum FROST-Server: https://sta-rt.savenow.de/frost
+|search| Hier geht's zum FROST-Server: https://sta-rt.savenow.de/frost
 
 .. image:: img/icon/frost-server-icon.png
   :width: 120 px
@@ -168,4 +168,4 @@ Container-Infrastruktur auch als Orchestrierung bezeichnet.
 Die hier gelisteten Services werden in einem Kubernetes-Cluster in der
 Microsoft Azure Cloud gehostet. Der verwendete Helm Chart ist hier verfügbar:
 
-  |cogs| Hier geht's zum Helm Chart: https://github.com/tum-gis/tum-gis-iot-stack-k8s
+  |cubes| Hier geht's zum Helm Chart: https://github.com/tum-gis/tum-gis-iot-stack-k8s
