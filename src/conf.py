@@ -25,10 +25,10 @@ copyright = u'2023, SAVeNoW'
 author = u'SAVeNoW'
 
 # The short X.Y version
-version = '0.0'
+version = '1.0'
 
 # The full version, including alpha/beta/rc tags
-release = '0.0.1'
+release = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
 
