@@ -1,8 +1,35 @@
-.. index:: Contact, Support
+.. index:: ! Kontakt, ! Support, ! Impressum
+
+
+.. index:: Impressum
 
 ###############################################################################
-Contact
+Impressum
 ###############################################################################
+
+| **SAVeNoW**
+| brigk - Digitales Gründerzentrum der Region Ingolstadt GmbH
+| Gerhard Stanzl
+| Schloßlände 26
+| 85049 Ingolstadt
+| E-Mail: info@savenow.de
+
+| **Redaktionell verantwortlich i.S.d. Art. 18 II MStV**
+| Gerhard Stanzl und Jörg Sichermann
+
+| **SAVeNoW** ist ein öffentlich gefördertes Kooperationsprojekt.
+
+.. image:: img/icon/bmdt.jpg
+  :width: 250 px
+  :align: center
+  :target: https://www.asg.ed.tum.de/gis/startseite
+
+###############################################################################
+Kontakt
+###############################################################################
+
+Sie haben eine Frage zu den :ref:`data:daten`, :ref:`standards:standards` oder
+den :ref:`Webdiensten <services:webdienste>`? Melden Sie sich gerne bei uns!
 
 .. rubric:: Bruno Willenborg
 
