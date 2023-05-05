@@ -4,8 +4,6 @@
 Daten
 ###############################################################################
 
-
-
 .. index:: Zählschleifendaten
 
 *******************************************************************************
@@ -97,7 +95,6 @@ zu untersuchen und diese zu modellieren.
 
 .. index:: Wetterdaten; Datenstruktur
 
-
 Datenstruktur
 ===============================================================================
 
@@ -106,7 +103,6 @@ Einheit und Beschreibung, können den ``Datastreams``, zum entsprechenden ``Thin
 entnommen werden (siehe auch :ref:`standards:datenmodell`).
 
 .. index:: Wetterdaten; Referenzen
-
 
 Referenzen
 ===============================================================================
