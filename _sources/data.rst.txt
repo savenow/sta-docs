@@ -34,7 +34,8 @@ Außerdem wird ein aggregierter Zählwert für die gesamte Kreuzung berechnet.
 Neben der Vorverarbeitung der Daten werden diese mit Metainformationen und
 Georeferenzen zu den Detektorpositionen angereichert.
 
-Nach dem Hochladen sind sie über die standardisierte Schnittstelle abrufbar.
+Nach dem Hochladen sind sie über die
+:ref:`standardisierte Schnittstelle <standards:ogc sensorthingsapi>` abrufbar.
 Aktuell besteht eine Verzögerung von 3-4 Minuten nach Ablauf der Zählperiode,
 bis die Daten über die Schnittstelle erreichbar sind.
 
@@ -44,7 +45,7 @@ bis die Daten über die Schnittstelle erreichbar sind.
   :align: center
   :name: detector_locations
 
-  Übersicht zu den Detektorpositionen in Ingolstadt.
+  Positionen der Schleifendetektoren in Ingolstadt.
 
 .. index:: Wetterdaten
 
