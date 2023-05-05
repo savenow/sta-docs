@@ -17,7 +17,7 @@ von SAVeNoW hier hinterlegt:
 |arrow-circle-right| `SAVeNoW Confluence - SensorThingsAPI <https://collaboration.msi.audi.com/confluence/display/SAVE/SensorThingsAPI>`_
 
 Wenn Sie sich für die Daten und Dienste interessieren und keinen Zugang haben,
-nehmen Sie gerne :ref:`Kontakt <contact:contact>` mit uns auf.
+nehmen Sie gerne :ref:`Kontakt <contact:kontakt>` mit uns auf.
 
 .. index:: ! FROST-Server, SensorThingsAPI, API
 
