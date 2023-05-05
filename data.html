@@ -55,7 +55,12 @@
               <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Daten</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#zahlschleifendaten">Zählschleifendaten</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#wetterdaten">Wetterdaten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wetterdaten">Wetterdaten</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#messaufbau">Messaufbau</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#datenstruktur">Datenstruktur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#referenzen">Referenzen</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="standards.html">Standards</a><ul>
@@ -147,6 +152,53 @@ bis die Daten über die Schnittstelle erreichbar sind.</p>
 </section>
 <section id="wetterdaten">
 <span id="index-2"></span><h2>Wetterdaten<a class="headerlink" href="#wetterdaten" title="Permalink to this heading"></a></h2>
+<p>Neben den Daten der Induktionsschleifen wird die <a class="reference internal" href="services.html#frost-server"><span class="std std-ref">SensorThingsAPI-Server</span></a>
+Instanz auch für die Daten von einen Wettermessstation aus dem <strong>SAVeNoW</strong>
+Forschungsprojekt genutzt.</p>
+<section id="messaufbau">
+<span id="index-3"></span><h3>Messaufbau<a class="headerlink" href="#messaufbau" title="Permalink to this heading"></a></h3>
+<p>Bei der Erfassung der Wetterdaten im Rahmen von SAVeNoW steht die Untersuchung
+der Witterungseinflüsse auf optische Sensoren im Vordergrund.
+In diesem Sinne werden vor allem Niederschläge (Regen, Schnee, Hagel) sowie die
+Stärke der Sonneneinstrahlung sehr präzise mit einer Zykluszeit von nur 60 s im Feld gemessen.
+Die Wettermessstation enthält dafür:</p>
+<ul class="simple">
+<li><p>Ein <a class="reference external" href="https://www.thiesclima.com/db/dnl/5.4110.xx.x00_Laser_Precipitation_Monitor_eng.pdf">Thies Laser Disdrometer</a> für die hochpräzise Erfassung der aktuellen Niederschlagsrate, sowie des Niederschlagstyps.
+Weiterhin werden die meteorologische Sichtweite sowie die Verteilung
+der Partikel-Geschwindigkeit und -Größe des Niederschlags gemessen.</p></li>
+<li><p>Ein <a class="reference external" href="https://www.thiesclima.com/db/dnl/1.1005.x4.xxx_Hygro_Thermo_Transmitter_compact_eng.pdf">Thies Hygro-Thermometer</a>, welches Umgebungstemperatur und Luftfeuchte misst.</p></li>
+<li><p>Ein <a class="reference external" href="https://www.thiesclima.com/db/dnl/4.3519.xx.140...961_WG-compact_analog_en.pdf">Thies Anemometer</a>, welches die Windgeschwindigkeit erfasst.</p></li>
+<li><p>Ein <a class="reference external" href="https://www.thiesclima.com/db/dnl/4.3129.xx.712_Wind-Direction-Transmitter-compact_Poti_eng.pdf">Thies Windrichtungssensor</a>, der die Windrichtung ermittelt.</p></li>
+<li><p>Ein <a class="reference external" href="https://www.catec.nl/uploads/pdf/THI-7.1415.05.xxx-folder_690.pdf">Thies Pyranometer</a>, welches die globale Bestrahlungsstärke der Sonne (W/m2) in einem Spektrum von 380-2800nm misst.</p></li>
+</ul>
+<figure class="align-center" id="weather-overview">
+<a class="reference internal image-reference" href="_images/weather-overview.png"><img alt="_images/weather-overview.png" src="_images/weather-overview.png" style="width: 98%;" /></a>
+<figcaption>
+<p><span class="caption-number">Abb. 3 </span><span class="caption-text">Messaufbau zur Wetter- und LiDAR-Datenerfassung im Feld.</span><a class="headerlink" href="#weather-overview" title="Link zu diesem Bild"></a></p>
+</figcaption>
+</figure>
+<p>Neben den gemessenen Größen wird auf Basis der lokalen Zeit, sowie den genauen Standortkoordinaten
+des Sensors, der genaue Sonnenstand berechnet. Der generelle Messaufbau ist in <a class="reference internal" href="#weather-overview"><span class="std std-numref">Abb. 3</span></a>
+dargestellt. So werden die Wetterdaten (rechts) von einem Raspberry-Pi 4 (MCU 2) aggregiert
+und mittels Wifi-Anbindung im Minutentakt in das Backend der Sensor Things API gespeist.
+Diese Daten werden unter anderem von einem Sensormast mit fest installierten LiDAR Sensoren (links)
+abgefragt, um die Performanz der Sensoren mit Hinblick auf die aktuell vorliegenden Wetterbedingungen
+zu untersuchen und diese zu modellieren.</p>
+</section>
+</section>
+<section id="datenstruktur">
+<span id="index-4"></span><h2>Datenstruktur<a class="headerlink" href="#datenstruktur" title="Permalink to this heading"></a></h2>
+<p>Genaue Informationen zu den einzelnen Messgrößen, wie deren Struktur,
+Einheit und Beschreibung, können den <code class="docutils literal notranslate"><span class="pre">Datastreams</span></code>, zum entsprechenden <code class="docutils literal notranslate"><span class="pre">Thing</span></code> <em>Weatherstation</em>
+entnommen werden (siehe auch <a class="reference internal" href="standards.html#datenmodell"><span class="std std-ref">Datenmodell</span></a>).</p>
+</section>
+<section id="referenzen">
+<span id="index-5"></span><h2>Referenzen<a class="headerlink" href="#referenzen" title="Permalink to this heading"></a></h2>
+<ul class="simple">
+<li><p>Kettelgerdes, M. Elger, G. (<strong>2023</strong>): <em>In-field Measurement and Methodology for Modeling and Validation of Precipitation Effects on Solid-State LiDAR Sensors</em>.
+IEEE J. Radio Freq. Identif. (IEEE Journal of Radio Frequency Identification).
+DOI: <a class="reference external" href="https://doi.org/10.1109/JRFID.2023.3234999">10.1109/JRFID.2023.3234999</a></p></li>
+</ul>
 </section>
 </section>
 

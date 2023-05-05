@@ -55,7 +55,12 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="data.html">Daten</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="data.html#zahlschleifendaten">Zählschleifendaten</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data.html#wetterdaten">Wetterdaten</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html#wetterdaten">Wetterdaten</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data.html#messaufbau">Messaufbau</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data.html#datenstruktur">Datenstruktur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html#referenzen">Referenzen</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="standards.html">Standards</a><ul>
@@ -165,21 +170,21 @@ ermöglicht strategische Entscheidungen</p></li>
 <span id="index-5"></span><h2>Zählschleifenkarte<a class="headerlink" href="#zahlschleifenkarte" title="Permalink to this heading"></a></h2>
 <p>Die Zählschleifenkarte visualisiert alle Zählschleifen in Ingolstadt, die
 mit der SensorThingsAPI verwaltet werden, auf einer <a class="reference external" href="https://leafletjs.com/">Leaflet</a>
-Webkarte. Eine Vorschau der Karte ist in <a class="reference internal" href="#preview-map"><span class="std std-numref">Abb. 4</span></a> und
-<a class="reference internal" href="#preview-map-close"><span class="std std-numref">Abb. 5</span></a> zu sehen.</p>
+Webkarte. Eine Vorschau der Karte ist in <a class="reference internal" href="#preview-map"><span class="std std-numref">Abb. 5</span></a> und
+<a class="reference internal" href="#preview-map-close"><span class="std std-numref">Abb. 6</span></a> zu sehen.</p>
 <blockquote>
 <div><p><em class="fa fa-map"></em> Hier geht’s zur Karte: <a class="reference external" href="https://sta-rt.savenow.de/map">https://sta-rt.savenow.de/map</a></p>
 </div></blockquote>
 <figure class="align-center" id="preview-map">
 <a class="reference internal image-reference" href="_images/overview_map.jpg"><img alt="SAVeNoW Zählschleifenkarte für Ingolstadt" src="_images/overview_map.jpg" style="width: 98%;" /></a>
 <figcaption>
-<p><span class="caption-number">Abb. 4 </span><span class="caption-text">Vorschau der Zählschleifenkarte von Ingolstadt.</span><a class="headerlink" href="#preview-map" title="Link zu diesem Bild"></a></p>
+<p><span class="caption-number">Abb. 5 </span><span class="caption-text">Vorschau der Zählschleifenkarte von Ingolstadt.</span><a class="headerlink" href="#preview-map" title="Link zu diesem Bild"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="preview-map-close">
 <a class="reference internal image-reference" href="_images/sta-map-graph.jpg"><img alt="SAVeNoW Zählschleifenkarte Kreuzung Hindenburgstr./Ringlerstr." src="_images/sta-map-graph.jpg" style="width: 98%;" /></a>
 <figcaption>
-<p><span class="caption-number">Abb. 5 </span><span class="caption-text">Detailansicht der SAVeNoW Zählschleifenkarte für die
+<p><span class="caption-number">Abb. 6 </span><span class="caption-text">Detailansicht der SAVeNoW Zählschleifenkarte für die
 Kreuzung Hindenburg-/Ringlerstraße. Die Livedaten der Verkehrszählungen
 werden bei Klick in einem Popup als Zeitreihe visualisiert.</span><a class="headerlink" href="#preview-map-close" title="Link zu diesem Bild"></a></p>
 </figcaption>
@@ -198,18 +203,18 @@ Die erfassten Rohdaten lassen sich anschließend in verschiedenen Anzeigeformen 
 Diese können dann zu sogenannten Dashboards zusammengefügt werden.
 Die Anzeigemöglichkeiten und Datenquellen können zudem mittels Plugins erweitert werden.
 Auf diese Weise wird auch der FROST-Server direkt unterstützt und es können
-ohne Programmierkenntnisse Dashboards (siehe <a class="reference internal" href="#dashboard-ges"><span class="std std-numref">Abb. 6</span></a>, <a class="reference internal" href="#dashboard-detail"><span class="std std-numref">Abb. 7</span></a> )
+ohne Programmierkenntnisse Dashboards (siehe <a class="reference internal" href="#dashboard-ges"><span class="std std-numref">Abb. 7</span></a>, <a class="reference internal" href="#dashboard-detail"><span class="std std-numref">Abb. 8</span></a> )
 in wenigen Klicks zusammengestellt werden.</p>
 <figure class="align-center" id="dashboard-ges">
 <a class="reference external image-reference" href="https://sta.savenow.de/grafana/"><img alt="Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str." src="_images/dashboard-hm.jpg" style="width: 98%;" /></a>
 <figcaption>
-<p><span class="caption-number">Abb. 6 </span><span class="caption-text">Vorschau Dashboard zur Verkehrsstärke in Ingolstadt.</span><a class="headerlink" href="#dashboard-ges" title="Link zu diesem Bild"></a></p>
+<p><span class="caption-number">Abb. 7 </span><span class="caption-text">Vorschau Dashboard zur Verkehrsstärke in Ingolstadt.</span><a class="headerlink" href="#dashboard-ges" title="Link zu diesem Bild"></a></p>
 </figcaption>
 </figure>
 <figure class="align-center" id="dashboard-detail">
 <a class="reference external image-reference" href="https://sta.savenow.de/grafana/"><img alt="_images/dashboard.jpg" src="_images/dashboard.jpg" style="width: 98%;" /></a>
 <figcaption>
-<p><span class="caption-number">Abb. 7 </span><span class="caption-text">Vorschau Dashboard zur Verkehrsstärke an der Kreuzung Nürnberger-/Theodor-Heuss-Straße.</span><a class="headerlink" href="#dashboard-detail" title="Link zu diesem Bild"></a></p>
+<p><span class="caption-number">Abb. 8 </span><span class="caption-text">Vorschau Dashboard zur Verkehrsstärke an der Kreuzung Nürnberger-/Theodor-Heuss-Straße.</span><a class="headerlink" href="#dashboard-detail" title="Link zu diesem Bild"></a></p>
 </figcaption>
 </figure>
 <section id="referenzen-zu-grafana">
