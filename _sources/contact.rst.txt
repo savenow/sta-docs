@@ -24,6 +24,16 @@ Impressum
   :align: center
   :target: https://www.asg.ed.tum.de/gis/startseite
 
+
+.. index:: Datenschutzerklärung
+
+*******************************************************************************
+Datenschutzerklärung
+*******************************************************************************
+
+Die `Datenschutzerklärung <https://savenow.de/de/privacy/>`_
+finden Sie auf der **SAVeNoW** Hauptseite.
+
 ###############################################################################
 Kontakt
 ###############################################################################
