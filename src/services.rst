@@ -26,7 +26,7 @@ FROST-Server
 *******************************************************************************
 
 Der FROST-Server stellt die SensorThingsAPI als Webanwendung bereit.
-Alle hier beschriebenen Datendienste greifen auf die API zu, um die 
+Alle hier beschriebenen Datendienste greifen auf die API zu, um die
 Zählschleifendaten abzurufen.
 
 |:rocket:| Hier geht's zum FROST-Server: https://sta-rt.savenow.de/frost |:rocket:|
@@ -124,7 +124,7 @@ Auf diese Weise wird auch der FROST-Server direkt unterstützt und es können
 ohne Programmierkenntnisse Dashboards (siehe :numref:`dashboard_ges`, :numref:`dashboard_detail` )
 in wenigen Klicks zusammengestellt werden.
 
-.. figure:: img/dashboard-hm.jpg.png
+.. figure:: img/dashboard-hm.jpg
   :width: 98 %
   :alt: Preview of the Grafana dashboard for the intersection Nürnbergerstr./Theodor-Heuss-Str.
   :align: center
@@ -162,7 +162,7 @@ Kubernetes
   :alt: FROST-Server logo
 
 Kubernetes ist ein von Google entwickeltes Open-Source-System zur Verwaltung von
-Container-Anwendungen. In diesem Umfeld wird die Verwaltung der technischen 
+Container-Anwendungen. In diesem Umfeld wird die Verwaltung der technischen
 Container-Infrastruktur auch als Orchestrierung bezeichnet.
 
 Die hier gelisteten Services werden in einem Kubernetes-Cluster in der
