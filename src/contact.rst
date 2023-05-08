@@ -4,8 +4,7 @@
 Impressum
 ###############################################################################
 
-| **SAVeNoW**
-| brigk - Digitales Gründerzentrum der Region Ingolstadt GmbH
+| Projekthaus **SAVeNoW**
 | Gerhard Stanzl
 | Schloßlände 26
 | 85049 Ingolstadt
