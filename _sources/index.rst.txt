@@ -14,8 +14,8 @@ SAVeNoW - Verkehrsdaten von Ingolstadt
 
 Die Stadt Ingolstadt stellt im Rahmen des Forschungsprojekts
 `SAVeNoW <https://www.savenow.de/>`_ Zählwerte von Kraftfahrzeugen aus dem
-gesamten Stadtgebiet für den Zeitraum seit August 2019 zur Verfügung sowie
-die aktuellen Livedaten.
+gesamten Stadtgebiet für den Zeitraum seit August 2019 sowie
+die aktuellen Livedaten zur Verfügung.
 
 Diese Zählwerte kommen von sogenannten Zählschleifen, die an allen
 wichtigen Kreuzungen mit Ampelanlage in der Straße je Fahrspur
