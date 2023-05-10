@@ -4,7 +4,7 @@
 SAVeNoW - Verkehrsdaten von Ingolstadt
 ###############################################################################
 
-  *Verwaltung von Zählschleifendaten mithilfe offener Standards und Dienste in
+  *Verwaltung von Verkehrszählungen mit Scheifendetektoren mit offenen Standards und Diensten in
   der Cloud*
 
 .. image:: img/icon/savenow-logo.png
