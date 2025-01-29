@@ -107,7 +107,7 @@ html_favicon = 'favicon.png'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_baseurl = "https://sta-rt.savenow.de/"
+html_baseurl = "https://savenow.github.io/sta-docs/"
 
 html_theme_options = {
     #'analytics_id': 'UA-XXXXXXX-1',  #  Provided by Google in your dashboard
