@@ -80,7 +80,7 @@ mit der :ref:`standards:ogc sensorthingsapi`  verwaltet werden, auf einer
 `Leaflet <https://leafletjs.com/>`_ Webkarte. Eine Vorschau der Karte ist in
 :numref:`preview_map` und :numref:`preview_map_close` zu sehen.
 
-    |map| Hier geht's zur Karte: https://sta-rt.savenow.de/map
+    |map| Hier geht's zur Karte: https://app.sdk-cloud.de/savenow/detector-map/
 
 .. figure:: img/overview_map.jpg
   :width: 98 %
@@ -106,7 +106,7 @@ mit der :ref:`standards:ogc sensorthingsapi`  verwaltet werden, auf einer
 Grafana
 *******************************************************************************
 
-  |line-chart| Hier geht's zu Grafana: https://sta-rt.savenow.de/grafana
+  |line-chart| Hier geht's zu Grafana: https://app.sdk-cloud.de/savenow/grafana-panels/d/EAVj0YHSz/savenow-showroom
 
 .. image:: img/icon/grafana-icon.jpg
   :width: 70 px
