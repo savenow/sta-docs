@@ -29,7 +29,7 @@ Der FROST-Server stellt die SensorThingsAPI als Webanwendung bereit.
 Alle hier beschriebenen Datendienste greifen auf die API zu, um die
 Zählschleifendaten abzurufen.
 
-|search| Hier geht's zum FROST-Server: https://sta-rt.savenow.de/frost
+|search| Hier geht's zum FROST-Server: https://app.sdk-cloud.de/FROST-Server/v1.1/
 
 .. image:: img/icon/frost-server-icon.png
   :width: 120 px
